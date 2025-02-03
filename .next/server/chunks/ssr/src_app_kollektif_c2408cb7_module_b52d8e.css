@@ -1,0 +1,51 @@
+/* [project]/src/app/kollektif_c2408cb7.module.css [app-client] (css) */
+@font-face {
+  font-family: Kollektif;
+  src: url("/_next/static/media/Kollektif-s.p.3e933ccc.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Kollektif;
+  src: url("/_next/static/media/Kollektif_Bold-s.p.21969197.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Kollektif;
+  src: url("/_next/static/media/Kollektif_Italic-s.p.168f0c90.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Kollektif;
+  src: url("/_next/static/media/Kollektif_BoldItalic-s.p.db9ecd72.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Kollektif Fallback;
+  src: local(Arial);
+  ascent-override: 81.16%;
+  descent-override: 19.16%;
+  line-gap-override: 20.06%;
+  size-adjust: 99.68%;
+}
+
+.kollektif_c2408cb7-module__CDPvzG__className {
+  font-family: Kollektif, Kollektif Fallback;
+}
+
+.kollektif_c2408cb7-module__CDPvzG__variable {
+  --font-kollektif: "Kollektif", "Kollektif Fallback";
+}
+
+/*# sourceMappingURL=src_app_kollektif_c2408cb7_module_b52d8e.css.map*/

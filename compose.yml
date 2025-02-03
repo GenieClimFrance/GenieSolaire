@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  nextjs:
+    image: ${DOCKER_USERNAME}/${APP_NAME}:latest
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
+      - SENDER_EMAIL=${SENDER_EMAIL}
+    ports:
+      - "3000:3000"
+    networks:
+      - nginx-proxy
+    # Vous pouvez ajouter des labels pour le reverse proxy, par exemple :
+    # labels:
+    #   - "VIRTUAL_HOST=www.mondomaine.com"
+    #   - "LETSENCRYPT_HOST=www.mondomaine.com"
+
+networks:
+  nginx-proxy:
+    external: true
