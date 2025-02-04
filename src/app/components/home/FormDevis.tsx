@@ -187,7 +187,7 @@ function FormDevis({ isServicePage }: { isServicePage?: boolean }) {
                 />
                 <p className="label-text text-tertiary ml-2">
                   J&apos;accepte de recevoir les offres et promos de{" "}
-                  <span className="font-bold">GENIECLIM FRANCE</span>
+                  <span className="font-bold">GENIE SOLAIRE FRANCE</span>
                 </p>
               </label>
             </div>

@@ -11,11 +11,11 @@ function Hero() {
               sur mesure
             </span>
           </h1>
-          <p className="text-white text-2xl lg:text-3xl font-bold uppercase lg:pr-28 xl:mt-8">
+          <p className="text-white text-xl lg:text-3xl font-bold uppercase lg:pr-28 xl:mt-8">
             Transformez votre toit en source d'énergie ! économisez dès
             aujourd'hui avec nos solutions solaires.
           </p>
-          <div className="flex flex-col lg:flex-row lg:items-center lg:mt-10 xl:mt-16 font-emOne lg:gap-8 xl:gap-10">
+          <div className="flex flex-col pt-8 lg:flex-row lg:items-center lg:mt-10 xl:mt-16 font-emOne lg:gap-8 xl:gap-10">
             <Link
               href="/#contact-form"
               className="btn xl:btn-lg bg-secondary border-none text-white text-md xl:text-lg font-bold uppercase mt-4 lg:mt-0 px-4 rounded-full hover:bg-secondary/80"

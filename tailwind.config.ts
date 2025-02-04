@@ -13,7 +13,7 @@ export default {
         primary: "#EBCA4E",
         secondary: "#1E1E1E",
         tertiary: "#F9F9F9",
-        hover: "#3EAB3D",
+        hover: "#F0B728",
       },
       fontFamily: {
         emOne: ["var(--font-em-one)", "sans-serif"],

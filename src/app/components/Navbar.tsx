@@ -26,7 +26,7 @@ function Navbar() {
         {/* Navbar */}
         <div className="navbar w-full flex gap-4 p-4">
           <Link href="/" className="mx-2 flex-1 px-2">
-            <Image src={logo} alt="logo" width={150} className="lg:w-[200px]" />
+            <Image src={logo} alt="logo" width={150} className="lg:w-[300px]" />
           </Link>
           <div className="flex-none lg:hidden">
             <a
@@ -64,7 +64,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/services/isolation"
-                      className="hover:text-primary hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
                     >
                       ISOLATION
                     </Link>
@@ -72,7 +72,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/services/pompe-a-chaleur"
-                      className="hover:text-primary hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
                     >
                       POMPES A CHALEUR
                     </Link>
@@ -80,7 +80,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/services/ballon-thermodynamique"
-                      className="hover:text-primary hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
                     >
                       BALLON THERMODYNAMIQUE
                     </Link>
@@ -88,7 +88,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/services/menuiserie"
-                      className="hover:text-primary hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
                     >
                       MENUISERIE
                     </Link>
@@ -96,7 +96,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/services/vmc"
-                      className="hover:text-primary hover:bg-transparent active:bg-primary focus-visible:outline-primary"
+                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
                     >
                       VMC
                     </Link>
@@ -104,30 +104,22 @@ function Navbar() {
                 </ul>
               </div>
               <li
-                className="font-emOne hover:text-primary focus-visible:outline-primary"
-                tabIndex={0}
-              >
-                <Link href="/notre-mission" tabIndex={0} onClick={closeDrawer}>
-                  NOTRE MISSION
-                </Link>
-              </li>
-              <li
-                className="font-emOne hover:text-primary focus-visible:outline-primary"
+                className="font-emOne hover:text-hover focus-visible:outline-primary"
                 tabIndex={0}
               >
                 <Link href="/notre-mission#retrouvez-nous">
-                  <FaMapLocationDot className="text-2xl text-primary focus-visible:outline-primary" />
+                  <FaMapLocationDot className="text-2xl text-hover focus-visible:outline-primary" />
                   OÙ NOUS TROUVER
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/eligibility"
+                <a
+                  href="tel:+33972121401"
                   className="btn rounded-full bg-primary hover:bg-hover text-white flex items-center gap-2"
                 >
-                  <GrValidate className="text-xl" />
-                  TEST D&apos;ÉLIGIBILITÉ
-                </Link>
+                  <FaPhoneVolume className="text-xl" />
+                  09 72 12 14 01
+                </a>
               </li>
             </ul>
           </div>
