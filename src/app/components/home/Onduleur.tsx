@@ -13,7 +13,7 @@ function Onduleur() {
         "gap-4 lg:gap-0",
         "bg-secondary",
         "border-2 border-primary rounded-3xl",
-        "p-8 mt-10 mb-32",
+        "p-8 mt-10 mb-40 lg:mb-0 lg:mt-20",
         "text-white font-emOne",
         "relative"
       )}
@@ -75,10 +75,12 @@ function Onduleur() {
         alt="Onduleur"
         className={twMerge(
           "absolute",
-          "-bottom-[9rem] lg:top-1/2",
+          "-bottom-[10rem] lg:top-1/2",
           "lg:-translate-y-1/2",
-          "right-0 lg:-left-60",
-          "lg:w-1/2"
+          "lg:-left-32",
+          "w-[80%] lg:w-[35%] xl:w-[30%]",
+          "filter",
+          "drop-shadow-[0_0_20px_rgba(235,202,78,0.5)]"
         )}
       />
     </section>

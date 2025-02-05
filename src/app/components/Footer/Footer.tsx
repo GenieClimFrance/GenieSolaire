@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
       <SocialLink />
-      <footer className="bg-secondary lg:flex lg:flex-row lg:justify-between text-gray-400 p-8 2xl:px-20">
+      <footer className="bg-secondary lg:flex lg:flex-row lg:justify-evenly lg:gap-10 text-gray-400 p-8 2xl:px-20">
         <div className="lg:w-[30%]">
           <h3 className="text-lg font-bold text-tertiary mb-4">
             GÉNIE SOLAIRE FRANCE
@@ -44,31 +44,13 @@ function Footer() {
               <Link href="/">Accueil</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/notre-mission">Notre mission</Link>
+              <Link href="/notre-mission">Nos solutions solaires</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
               <Link href="/notre-mission#retrouvez-nous">Contactez-nous</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
               <Link href="/mentions-legales">Mentions légales</Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-bold text-tertiary mt-8 mb-2">
-            Solutions
-          </h3>
-          <ul className="flex flex-col gap-2">
-            <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/services/pompe-a-chaleur">Garantie 20 ans</Link>
-            </li>
-            <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/services/vmc">Stocker son électricité</Link>
-            </li>
-            <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/services/ballon-thermodynamique">
-                Consommer sa propre production
-              </Link>
             </li>
           </ul>
         </div>

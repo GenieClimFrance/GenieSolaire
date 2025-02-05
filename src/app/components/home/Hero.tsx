@@ -3,7 +3,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <header className="relative min-h-[50vh] lg:h-[90vh] 2xl:h-[85vh] bg-cover bg-center bg-no-repeat lg:bg-[url('/hero-desktop.webp')] bg-[url('/hero-mobile.png')]">
-      <div className="container xl:mx-0 p-8 lg:px-28 lg:py-16 2xl:p-28 2xl:px-80">
+      <div className="container xl:mx-0 p-8 lg:px-20 xl:px-28 lg:py-12 xl:py-20 2xl:p-28 2xl:px-80">
         <div className="max-w-[50rem] flex flex-col items-center lg:items-start">
           <h1 className="text-white text-2xl lg:text-5xl xl:text-6xl lg:leading-tight xl:leading-tight uppercase font-bold mb-8">
             Votre installation de panneaux solaires{" "}
@@ -11,7 +11,7 @@ function Hero() {
               sur mesure
             </span>
           </h1>
-          <p className="text-white text-xl lg:text-3xl font-bold uppercase lg:pr-28 xl:mt-8">
+          <p className="text-white text-xl lg:text-3xl font-bold uppercase lg:pr-72 xl:mt-8">
             Transformez votre toit en source d'énergie ! économisez dès
             aujourd'hui avec nos solutions solaires.
           </p>

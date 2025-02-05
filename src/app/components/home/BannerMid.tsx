@@ -25,7 +25,7 @@ function BannerMid() {
             className="w-24 h-24 rounded-full bg-primary p-3"
           />
           <p className="text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
-            Subventions des pollueurs/payeurs
+            Solutions écologiques et économiques
           </p>
         </li>
         <li className="flex flex-col items-center gap-2">
@@ -45,8 +45,8 @@ function BannerMid() {
             className="w-24 h-24 gap-2 rounded-full bg-primary p-4"
           />
           <p className="text-white flex flex-col text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
-            Pose complète pour 1€*
-            <span className="text-xs">*sous réserve d&apos;éligibilité</span>
+            Devis et étude gratuits
+            <span className="text-xs">*sous conditions</span>
           </p>
         </li>
       </ul>

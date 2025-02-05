@@ -6,9 +6,7 @@ import Image from "next/image";
 import logo from "@/../public/logo.svg";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { GrValidate } from "react-icons/gr";
 
-import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 
 function Navbar() {
@@ -48,69 +46,38 @@ function Navbar() {
           <div className="hidden flex-none lg:block">
             <ul className="menu flex items-center gap-8 menu-horizontal">
               {/* Navbar menu content here */}
-              <div className="dropdown">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="btn btn-ghost focus:text-primary font-emOne hover:text-primary"
+              <li>
+                <a
+                  href="#nos-solutions"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById("nos-solutions");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className="font-emOne hover:text-hover focus-visible:outline-primary uppercase"
                 >
-                  NOS SERVICES
-                  <IoIosArrowDown className="text-xl text-primary" />
-                </div>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
-                >
-                  <li>
-                    <Link
-                      href="/services/isolation"
-                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
-                    >
-                      ISOLATION
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/pompe-a-chaleur"
-                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
-                    >
-                      POMPES A CHALEUR
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/ballon-thermodynamique"
-                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
-                    >
-                      BALLON THERMODYNAMIQUE
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/menuiserie"
-                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
-                    >
-                      MENUISERIE
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/vmc"
-                      className="hover:text-hover hover:bg-transparent active:bg-primary focus-visible:outline-primary"
-                    >
-                      VMC
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                  Nos solutions
+                </a>
+              </li>
               <li
                 className="font-emOne hover:text-hover focus-visible:outline-primary"
                 tabIndex={0}
               >
-                <Link href="/notre-mission#retrouvez-nous">
+                <a
+                  href="#contact-form"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById("contact-form");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <FaMapLocationDot className="text-2xl text-hover focus-visible:outline-primary" />
                   OÙ NOUS TROUVER
-                </Link>
+                </a>
               </li>
               <li>
                 <a
@@ -142,81 +109,15 @@ function Navbar() {
               <Image src={logo} alt="logo" width={200} />
             </Link>
           </li>
-          <li className="mt-4">
-            <details
-              onToggle={(e) => setIsOpen((e.target as HTMLDetailsElement).open)}
-            >
-              <summary
-                className={`w-fit ${isOpen ? "text-primary" : "text-black"}`}
-                tabIndex={0}
-              >
-                NOS SERVICES
-              </summary>
-              <ul>
-                <li>
-                  <Link
-                    href="/services/isolation"
-                    tabIndex={0}
-                    onClick={closeDrawer}
-                  >
-                    ISOLATION
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/pompe-a-chaleur"
-                    tabIndex={0}
-                    onClick={closeDrawer}
-                  >
-                    POMPES A CHALEUR
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/ballon-thermodynamique"
-                    tabIndex={0}
-                    onClick={closeDrawer}
-                  >
-                    BALLON THERMODYNAMIQUE
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/menuiserie"
-                    tabIndex={0}
-                    onClick={closeDrawer}
-                  >
-                    MENUISERIE
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/vmc" tabIndex={0} onClick={closeDrawer}>
-                    VMC
-                  </Link>
-                </li>
-              </ul>
-            </details>
-          </li>
           <li>
             <Link href="/notre-mission" tabIndex={0} onClick={closeDrawer}>
-              NOTRE MISSION
+              NOS SOLUTION SOLAIRE
             </Link>
           </li>
           <li>
             <Link href="/eligibility" tabIndex={0} onClick={closeDrawer}>
               OÙ NOUS TROUVER
               <FaMapLocationDot className="text-2xl text-primary" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/eligibility"
-              tabIndex={0}
-              onClick={closeDrawer}
-              className="btn rounded-full bg-primary hover:bg-hover text-white flex items-center w-fit"
-            >
-              TEST D&apos;ÉLIGIBILITÉ
-              <GrValidate className="text-xl" />
             </Link>
           </li>
         </ul>

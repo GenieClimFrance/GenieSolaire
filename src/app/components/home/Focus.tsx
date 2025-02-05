@@ -13,13 +13,13 @@ export default function Focus() {
       <Image
         src={panneausolaire}
         alt="Panneau solaire"
-        className="w-[90%] mr-auto"
+        className="w-[90%] xl:w-[80%] mr-auto xl:mr-0"
       />
 
       <FocusButton
         id="technologie"
         label="Technologie"
-        positionClasses="absolute top-[25%] left-[30%]"
+        positionClasses="absolute top-[25%] left-[30%] xl:left-[40%]"
         expandedWidth="w-24"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}
@@ -28,7 +28,7 @@ export default function Focus() {
       <FocusButton
         id="design"
         label="Design"
-        positionClasses="absolute top-[45%] right-[10%]"
+        positionClasses="absolute top-[45%] right-[10%] xl:right-[20%]"
         expandedWidth="w-16"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}
@@ -37,7 +37,7 @@ export default function Focus() {
       <FocusButton
         id="resistance"
         label="Résistance"
-        positionClasses="absolute bottom-[20%] left-[15%]"
+        positionClasses="absolute bottom-[20%] left-[15%] xl:left-[25%]"
         expandedWidth="w-20"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}

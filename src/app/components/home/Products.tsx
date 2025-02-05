@@ -6,7 +6,10 @@ import Onduleur from "./Onduleur";
 
 function Article() {
   return (
-    <article className="flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-20 lg:p-24 lg:px-40 2xl:px-36">
+    <article
+      id="nos-solutions"
+      className="flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-72"
+    >
       <section className="flex flex-col lg:flex-row gap-4">
         <div className="lg:w-1/2 2xl:text-xl">
           <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-bold uppercase pb-8 font-emOne after:content-[''] after:mt-2 after:block after:w-10 after:h-[0.35rem] after:bg-primary">

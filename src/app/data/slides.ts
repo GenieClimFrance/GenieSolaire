@@ -14,8 +14,7 @@ export const slides: Slide[] = [
     id: 1,
     title: "Panneau photovoltaïque",
     content: [
-      "Il est possible de stocker l'électricité que vous produisez grâce à vos panneaux solaires pour l'utiliser plus tard. Il est possible, en tant que particulier, de stocker l'électricité chez vous grâce à une batterie. ",
-      "Ainsi, vous pouvez stocker votre électricité lorsque cette dernière est la moins chère.",
+      "Il est possible de stocker l'électricité que vous produisez grâce à vos panneaux solaires pour l'utiliser plus tard. Il est possible, en tant que particulier, de stocker l'électricité chez vous grâce à une batterie. Ainsi, vous pouvez stocker votre électricité lorsque cette dernière est la moins chère.",
     ],
     image: panneau,
   },

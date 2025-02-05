@@ -3,7 +3,7 @@ import imgGcf from "@/../public/img-gcf.png";
 
 function Article() {
   return (
-    <article className="flex flex-col lg:items-center lg:justify-center xl:gap-14 lg:flex-row p-8 xl:px-20 lg:p-24 2xl:px-36">
+    <article className="flex flex-col lg:items-center lg:justify-center lg:px-40 xl:gap-14 lg:flex-row p-8 xl:px-40 lg:p-24 2xl:px-36">
       <div className="lg:w-1/2 2xl:text-xl">
         <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-bold uppercase pb-1 font-emOne">
           Génie Solaire france

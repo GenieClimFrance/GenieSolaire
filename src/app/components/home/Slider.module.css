@@ -34,7 +34,7 @@
 
 .slider :global(.swiper-button-next),
 .slider :global(.swiper-button-prev) {
-  color: theme("colors.primary") !important;
+  color: theme("colors.secondary") !important;
 }
 
 .slider

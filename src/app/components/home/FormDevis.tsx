@@ -2,7 +2,7 @@
 
 import InfoContact from "./InfoContact";
 import { useState } from "react";
-function FormDevis({ isServicePage }: { isServicePage?: boolean }) {
+function FormDevis() {
   const [Name, setName] = useState("");
   const [FirstName, setFirstName] = useState("");
   const [Email, setEmail] = useState("");
@@ -57,17 +57,9 @@ function FormDevis({ isServicePage }: { isServicePage?: boolean }) {
   return (
     <section
       id="contact-form"
-      className={`flex flex-col lg:flex-row gap-4 p-6 bg-secondary lg:px-[10.5rem] 2xl:px-[21.5rem] ${
-        isServicePage
-          ? "lg:bg-white"
-          : "lg:bg-[url('/bg-contact.webp')] lg:bg-cover lg:bg-center lg:bg-no-repeat"
-      }`}
+      className="flex flex-col lg:flex-row gap-4 p-6 bg-secondary lg:px-32 2xl:px-72 lg:bg-[url('/bg-contact.webp')] lg:bg-cover lg:bg-center lg:bg-no-repeat"
     >
-      <div
-        className={`lg:bg-secondary lg:rounded-3xl ${
-          isServicePage ? "w-full" : "lg:w-2/3"
-        } lg:p-12`}
-      >
+      <div className="lg:bg-secondary lg:rounded-3xl lg:w-2/3 lg:p-12">
         <h3 className="text-2xl font-emOne text-tertiary text-start lg:pl-12">
           Demander un devis
         </h3>
@@ -197,7 +189,7 @@ function FormDevis({ isServicePage }: { isServicePage?: boolean }) {
           </label>
         </form>
       </div>
-      {!isServicePage && <InfoContact />}
+      <InfoContact />
     </section>
   );
 }

@@ -18,3 +18,7 @@ textarea:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px theme("colors.primary");
 }
+
+html {
+  scroll-behavior: smooth;
+}
