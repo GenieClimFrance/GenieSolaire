@@ -8,7 +8,7 @@ function Article() {
   return (
     <article
       id="nos-solutions"
-      className="flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-72"
+      className="flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-80"
     >
       <section className="flex flex-col lg:flex-row gap-4">
         <div className="lg:w-1/2 2xl:text-xl">

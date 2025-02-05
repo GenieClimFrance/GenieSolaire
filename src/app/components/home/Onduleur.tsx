@@ -78,7 +78,7 @@ function Onduleur() {
           "-bottom-[10rem] lg:top-1/2",
           "lg:-translate-y-1/2",
           "lg:-left-32",
-          "w-[80%] lg:w-[35%] xl:w-[30%]",
+          "w-[80%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%]",
           "filter",
           "drop-shadow-[0_0_20px_rgba(235,202,78,0.5)]"
         )}

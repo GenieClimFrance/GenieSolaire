@@ -13,7 +13,7 @@ export default function Focus() {
       <Image
         src={panneausolaire}
         alt="Panneau solaire"
-        className="w-[90%] xl:w-[80%] mr-auto xl:mr-0"
+        className="w-[90%] xl:w-[80%] 2xl:w-[70%] mr-auto xl:mr-0"
       />
 
       <FocusButton
