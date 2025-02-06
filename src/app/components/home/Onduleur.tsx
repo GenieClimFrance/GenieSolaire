@@ -1,4 +1,5 @@
 import imgOnduleur from "@/../public/onduleur.png";
+import { WordRotate } from "@/components/word-rotate";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -48,28 +49,14 @@ function Onduleur() {
           maximiser l'efficacité de votre installation photovoltaïque
         </span>
       </p>
-      <ul
-        className={twMerge(
-          "flex flex-col",
-          "gap-4 mt-6",
-          "text-xl uppercase",
-          "w-full"
-        )}
-      >
-        {["Puissance", "Rendement", "Contrôle"].map((item) => (
-          <li
-            key={item}
-            className={twMerge(
-              "bg-[#333333]",
-              "w-full lg:w-1/3",
-              "text-center py-2",
-              "border-l-2 border-primary"
-            )}
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
+
+      <div className="flex flex-col items-center justify-center border-l-2 border-primary px-4 mt-6 bg-[#3B3B3B]">
+        <WordRotate
+          duration={2000}
+          className="text-2xl font-bold uppercase text-white"
+          words={["Puissance", "Rendement", "Contrôle"]}
+        />
+      </div>
       <Image
         src={imgOnduleur}
         alt="Onduleur"

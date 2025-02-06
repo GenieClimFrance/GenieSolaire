@@ -24,7 +24,7 @@ function Navbar() {
         {/* Navbar */}
         <div className="navbar w-full flex gap-4 p-4">
           <Link href="/" className="mx-2 flex-1 px-2">
-            <Image src={logo} alt="logo" width={150} className="lg:w-[300px]" />
+            <Image src={logo} alt="logo" width={200} className="lg:w-[300px]" />
           </Link>
           <div className="flex-none lg:hidden">
             <a
@@ -110,15 +110,38 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/notre-mission" tabIndex={0} onClick={closeDrawer}>
+            <a
+              href="#nos-solutions"
+              tabIndex={0}
+              onClick={(e) => {
+                e.preventDefault();
+                closeDrawer();
+                const target = document.getElementById("nos-solutions");
+                if (target) {
+                  target.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="font-emOne hover:text-hover focus-visible:outline-primary uppercase"
+            >
               NOS SOLUTION SOLAIRE
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="/eligibility" tabIndex={0} onClick={closeDrawer}>
-              OÙ NOUS TROUVER
-              <FaMapLocationDot className="text-2xl text-primary" />
-            </Link>
+            <a
+              href="#contact-form"
+              className="font-emOne hover:text-hover focus-visible:outline-primary uppercase"
+              tabIndex={0}
+              onClick={(e) => {
+                e.preventDefault();
+                closeDrawer();
+                const target = document.getElementById("contact-form");
+                if (target) {
+                  target.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Contactez-nous
+            </a>
           </li>
         </ul>
       </div>

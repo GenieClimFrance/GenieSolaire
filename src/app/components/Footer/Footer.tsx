@@ -44,10 +44,10 @@ function Footer() {
               <Link href="/">Accueil</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/notre-mission">Nos solutions solaires</Link>
+              <Link href="#nos-solutions">Nos solutions solaires</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
-              <Link href="/notre-mission#retrouvez-nous">Contactez-nous</Link>
+              <Link href="#contact-form">Contactez-nous</Link>
             </li>
             <li className="hover:text-tertiary transition-colors duration-300 cursor-pointer">
               <Link href="/mentions-legales">Mentions légales</Link>

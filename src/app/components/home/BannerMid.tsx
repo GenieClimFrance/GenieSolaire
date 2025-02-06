@@ -46,7 +46,6 @@ function BannerMid() {
           />
           <p className="text-white flex flex-col text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
             Devis et étude gratuits
-            <span className="text-xs">*sous conditions</span>
           </p>
         </li>
       </ul>

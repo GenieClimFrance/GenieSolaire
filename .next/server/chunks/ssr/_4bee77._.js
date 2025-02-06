@@ -5,19 +5,6 @@ module.exports = {
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
 __turbopack_export_value__({
-  "backgroundImage": "Slider-module__HeVZNa__backgroundImage",
-  "btn-active": "Slider-module__HeVZNa__btn-active",
-  "btn-disabled": "Slider-module__HeVZNa__btn-disabled",
-  "button-pop": "Slider-module__HeVZNa__button-pop",
-  "glass": "Slider-module__HeVZNa__glass",
-  "join": "Slider-module__HeVZNa__join",
-  "join-horizontal": "Slider-module__HeVZNa__join-horizontal",
-  "join-vertical": "Slider-module__HeVZNa__join-vertical",
-  "slide": "Slider-module__HeVZNa__slide",
-  "slideButton": "Slider-module__HeVZNa__slideButton",
-  "slideText": "Slider-module__HeVZNa__slideText",
-  "slideTitle": "Slider-module__HeVZNa__slideTitle",
-  "slider": "Slider-module__HeVZNa__slider",
 });
 }}),
 "[project]/public/panneau.webp [app-ssr] (static)": ((__turbopack_context__) => {
@@ -85,8 +72,7 @@ const slides = [
         id: 1,
         title: "Panneau photovoltaïque",
         content: [
-            "Il est possible de stocker l'électricité que vous produisez grâce à vos panneaux solaires pour l'utiliser plus tard. Il est possible, en tant que particulier, de stocker l'électricité chez vous grâce à une batterie. ",
-            "Ainsi, vous pouvez stocker votre électricité lorsque cette dernière est la moins chère."
+            "Il est possible de stocker l'électricité que vous produisez grâce à vos panneaux solaires pour l'utiliser plus tard. Il est possible, en tant que particulier, de stocker l'électricité chez vous grâce à une batterie. Ainsi, vous pouvez stocker votre électricité lorsque cette dernière est la moins chère."
         ],
         image: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$panneau$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$panneau$2e$webp__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]
     },
@@ -249,7 +235,7 @@ function InfoContact() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Email: contact@genieclimfrance.fr"
+                children: "Email: contact@geniesolairefrance.fr"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/InfoContact.tsx",
                 lineNumber: 6,
@@ -339,7 +325,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-function FormDevis({ isServicePage }) {
+function FormDevis() {
     const [Name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [FirstName, setFirstName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [Email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -383,17 +369,17 @@ function FormDevis({ isServicePage }) {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "contact-form",
-        className: `flex flex-col lg:flex-row gap-4 p-6 bg-secondary lg:px-[10.5rem] 2xl:px-[21.5rem] ${isServicePage ? "lg:bg-white" : "lg:bg-[url('/bg-contact.webp')] lg:bg-cover lg:bg-center lg:bg-no-repeat"}`,
+        className: "flex flex-col lg:flex-row gap-4 p-6 bg-secondary lg:px-32 2xl:px-72 lg:bg-[url('/bg-contact.webp')] lg:bg-cover lg:bg-center lg:bg-no-repeat",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `lg:bg-secondary lg:rounded-3xl ${isServicePage ? "w-full" : "lg:w-2/3"} lg:p-12`,
+                className: "lg:bg-secondary lg:rounded-3xl lg:w-2/3 lg:p-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "text-2xl font-emOne text-tertiary text-start lg:pl-12",
                         children: "Demander un devis"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                        lineNumber: 71,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -413,12 +399,12 @@ function FormDevis({ isServicePage }) {
                                                     children: "Nom*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 73,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 80,
+                                                lineNumber: 72,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -430,13 +416,13 @@ function FormDevis({ isServicePage }) {
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 77,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 71,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -449,12 +435,12 @@ function FormDevis({ isServicePage }) {
                                                     children: "Prénom*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 88,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 95,
+                                                lineNumber: 87,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -466,13 +452,13 @@ function FormDevis({ isServicePage }) {
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 92,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -485,12 +471,12 @@ function FormDevis({ isServicePage }) {
                                                     children: "Code postal*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 111,
+                                                    lineNumber: 103,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 110,
+                                                lineNumber: 102,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -502,19 +488,19 @@ function FormDevis({ isServicePage }) {
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 107,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                lineNumber: 78,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -530,12 +516,12 @@ function FormDevis({ isServicePage }) {
                                                     children: "Email*"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 120,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 127,
+                                                lineNumber: 119,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -547,13 +533,13 @@ function FormDevis({ isServicePage }) {
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 124,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -566,12 +552,12 @@ function FormDevis({ isServicePage }) {
                                                     children: "Téléphone"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 143,
+                                                    lineNumber: 135,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 134,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -582,19 +568,19 @@ function FormDevis({ isServicePage }) {
                                                 onChange: (e)=>setPhone(e.target.value)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 139,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 133,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                lineNumber: 125,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -607,12 +593,12 @@ function FormDevis({ isServicePage }) {
                                             children: "Message*"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 150,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 157,
+                                        lineNumber: 149,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -623,7 +609,7 @@ function FormDevis({ isServicePage }) {
                                         onChange: (e)=>setMessage(e.target.value)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 154,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -636,7 +622,7 @@ function FormDevis({ isServicePage }) {
                                                     className: "checkbox bg-tertiary [--chkbg:theme(colors.tertiary)] [--chkfg:theme(colors.primary)] mr-2 focus:outline-primary focus:ring-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 163,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -649,7 +635,7 @@ function FormDevis({ isServicePage }) {
                                                             children: "CGU"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                            lineNumber: 177,
+                                                            lineNumber: 169,
                                                             columnNumber: 19
                                                         }, this),
                                                         " ainsi que les",
@@ -659,24 +645,24 @@ function FormDevis({ isServicePage }) {
                                                             children: "mentions légales"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                            lineNumber: 178,
+                                                            lineNumber: 170,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 175,
+                                                    lineNumber: 167,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                            lineNumber: 170,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 161,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -689,7 +675,7 @@ function FormDevis({ isServicePage }) {
                                                     className: "checkbox bg-tertiary [--chkbg:theme(colors.tertiary)] [--chkfg:theme(colors.primary)] mr-2 focus:outline-primary focus:ring-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 176,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -702,24 +688,24 @@ function FormDevis({ isServicePage }) {
                                                             children: "GENIE SOLAIRE FRANCE"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                            lineNumber: 190,
+                                                            lineNumber: 182,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 180,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                            lineNumber: 183,
+                                            lineNumber: 175,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -727,31 +713,31 @@ function FormDevis({ isServicePage }) {
                                         children: "Soumettre ma demande"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                                lineNumber: 156,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                        lineNumber: 74,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                lineNumber: 66,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
-            !isServicePage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$InfoContact$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$InfoContact$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/components/home/FormDevis.tsx",
-                lineNumber: 200,
-                columnNumber: 26
+                lineNumber: 192,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
@@ -905,7 +891,7 @@ function Focus() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$panneausolaire$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$panneausolaire$2e$png__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                 alt: "Panneau solaire",
-                className: "w-[90%] mr-auto"
+                className: "w-[90%] xl:w-[80%] 2xl:w-[70%] mr-auto xl:mr-0"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Focus.tsx",
                 lineNumber: 13,
@@ -914,7 +900,7 @@ function Focus() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$FocusButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 id: "technologie",
                 label: "Technologie",
-                positionClasses: "absolute top-[25%] left-[30%]",
+                positionClasses: "absolute top-[25%] left-[30%] xl:left-[40%]",
                 expandedWidth: "w-24",
                 hoveredButton: hoveredButton,
                 setHoveredButton: setHoveredButton
@@ -926,7 +912,7 @@ function Focus() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$FocusButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 id: "design",
                 label: "Design",
-                positionClasses: "absolute top-[45%] right-[10%]",
+                positionClasses: "absolute top-[45%] right-[10%] xl:right-[20%]",
                 expandedWidth: "w-16",
                 hoveredButton: hoveredButton,
                 setHoveredButton: setHoveredButton
@@ -938,7 +924,7 @@ function Focus() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$FocusButton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 id: "resistance",
                 label: "Résistance",
-                positionClasses: "absolute bottom-[20%] left-[15%]",
+                positionClasses: "absolute bottom-[20%] left-[15%] xl:left-[25%]",
                 expandedWidth: "w-20",
                 hoveredButton: hoveredButton,
                 setHoveredButton: setHoveredButton

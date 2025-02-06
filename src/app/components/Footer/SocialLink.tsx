@@ -9,12 +9,12 @@ function SocialLink() {
   return (
     <section className="flex flex-col lg:flex-row justify-center lg:justify-normal items-center bg-gradient-to-r from-[#F1C629] via-[#F1C629] to-[#F1C629] p-8">
       <ul className="flex gap-4 justify-between lg:justify-normal lg:w-1/3 w-full">
-        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-secondary/80">
+        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-white">
           <a href="https://www.instagram.com/genieclimfrance/" target="_blank">
             <FaInstagram className="text-primary" />
           </a>
         </li>
-        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-secondary/80">
+        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-white">
           <a
             href="https://www.facebook.com/p/GenieClim-France-61551065537391/"
             target="_blank"
@@ -22,7 +22,7 @@ function SocialLink() {
             <FaFacebook className="text-primary" />
           </a>
         </li>
-        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-secondary/80">
+        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-white">
           <a
             href="https://www.linkedin.com/company/genie-clim-france"
             target="_blank"
@@ -30,7 +30,7 @@ function SocialLink() {
             <FaLinkedin className="text-primary" />
           </a>
         </li>
-        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-secondary/80">
+        <li className="btn btn-circle text-2xl bg-secondary rounded-full hover:bg-white">
           <a href="https://www.youtube.com/@genieclimfrance" target="_blank">
             <FaYoutube className="text-primary" />
           </a>

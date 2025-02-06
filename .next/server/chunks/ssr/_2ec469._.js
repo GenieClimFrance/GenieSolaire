@@ -40,7 +40,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$img$2d$gcf$2e$png$
 ;
 function Article() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-        className: "flex flex-col lg:items-center lg:justify-center xl:gap-14 lg:flex-row p-8 xl:px-20 lg:p-24 2xl:px-36",
+        className: "flex flex-col lg:items-center lg:justify-center lg:px-40 xl:gap-14 lg:flex-row p-8 xl:px-40 lg:p-24 2xl:px-72",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "lg:w-1/2 2xl:text-xl",
@@ -276,7 +276,7 @@ function BannerMid() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
-                            children: "Subventions des pollueurs/payeurs"
+                            children: "Solutions écologiques et économiques"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
                             lineNumber: 27,
@@ -328,18 +328,8 @@ function BannerMid() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-white flex flex-col text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
-                            children: [
-                                "Pose complète pour 1€*",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs",
-                                    children: "*sous réserve d'éligibilité"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/home/BannerMid.tsx",
-                                    lineNumber: 49,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            children: "Devis et étude gratuits"
+                        }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
                             lineNumber: 47,
                             columnNumber: 11
@@ -380,7 +370,7 @@ function Hero() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "relative min-h-[50vh] lg:h-[90vh] 2xl:h-[85vh] bg-cover bg-center bg-no-repeat lg:bg-[url('/hero-desktop.webp')] bg-[url('/hero-mobile.png')]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container xl:mx-0 p-8 lg:px-28 lg:py-16 2xl:p-28 2xl:px-80",
+            className: "container xl:mx-0 p-8 lg:px-20 xl:px-28 lg:py-12 xl:py-20 2xl:p-28 2xl:px-80",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-[50rem] flex flex-col items-center lg:items-start",
                 children: [
@@ -404,7 +394,7 @@ function Hero() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-white text-xl lg:text-3xl font-bold uppercase lg:pr-28 xl:mt-8",
+                        className: "text-white text-xl lg:text-3xl font-bold uppercase lg:pr-72 xl:mt-8",
                         children: "Transformez votre toit en source d'énergie ! économisez dès aujourd'hui avec nos solutions solaires."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/Hero.tsx",
@@ -596,9 +586,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Stats() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "flex flex-col lg:flex-row items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 mt-10 text-white font-emOne",
+        className: "flex flex-col lg:flex-row xl:w-full items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 lg:p-10 mt-10 lg:mt-20 text-white font-emOne",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-            className: "flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 uppercase",
+            className: "flex flex-col lg:flex-row items-center  lg:gap-20 xl:gap-28 justify-center gap-10 uppercase",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                     children: [
@@ -635,7 +625,7 @@ function Stats() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg lg:text-sm text-center",
+                            className: "text-lg lg:text-sm text-center text-nowrap",
                             children: "Efficacité de Conversion"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Stats.tsx",
@@ -652,15 +642,15 @@ function Stats() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-4xl lg:text-2xl text-center",
-                            children: "93%"
+                            children: "30 ans"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Stats.tsx",
                             lineNumber: 16,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg lg:text-sm text-center",
-                            children: "Performance en Faible Luminosité"
+                            className: "text-lg lg:text-sm text-center text-nowrap",
+                            children: "Garantie de Performance"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Stats.tsx",
                             lineNumber: 17,
@@ -675,16 +665,16 @@ function Stats() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-4xl lg:text-2xl text-center",
-                            children: "30 ans"
+                            className: "text-4xl lg:text-2xl text-center w-full",
+                            children: "250 kg"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Stats.tsx",
                             lineNumber: 22,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg lg:text-sm text-center",
-                            children: "Garantie de Performance"
+                            className: "text-lg lg:text-sm text-center text-nowrap",
+                            children: "CO₂ Évitée par An"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Stats.tsx",
                             lineNumber: 23,
@@ -694,62 +684,6 @@ function Stats() {
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/home/Stats.tsx",
                     lineNumber: 21,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-4xl lg:text-2xl text-center",
-                            children: "+10%"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/home/Stats.tsx",
-                            lineNumber: 28,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg lg:text-sm text-center text-nowrap",
-                            children: "Production supplémentaire"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/home/Stats.tsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-sm text-center text-nowrap",
-                            children: "Technologie Black Hole"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/home/Stats.tsx",
-                            lineNumber: 32,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/components/home/Stats.tsx",
-                    lineNumber: 27,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-4xl lg:text-2xl text-center w-full",
-                            children: "250 kg"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/home/Stats.tsx",
-                            lineNumber: 37,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg lg:text-sm text-center text-nowrap",
-                            children: "CO₂ Évitée par An"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/home/Stats.tsx",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/components/home/Stats.tsx",
-                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             ]
@@ -770,7 +704,7 @@ const __TURBOPACK__default__export__ = Stats;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/onduleur.47680a7c.png");}}),
+__turbopack_export_value__("/_next/static/media/onduleur.24d9df3d.png");}}),
 "[project]/public/onduleur.png.mjs { IMAGE => \"[project]/public/onduleur.png [app-rsc] (static)\" } [app-rsc] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -783,10 +717,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$onduleur$2e$png__$
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$onduleur$2e$png__$5b$app$2d$rsc$5d$__$28$static$29$__["default"],
-    width: 378,
-    height: 451,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAA80lEQVR42gHoABf/AAUFBAAmIhYAWlEuAoZ3PQSPfUIEWE4uAQgHBgAAXFU0AcyzVQzozGQr79d8U+vVg13Vu1kWPjgiAQCklUgG7tNtQPDp0M7m5d/z19XP8My2X09sYTIDAKaYRQjt1HFT29nS8LCwsP/R0M/7x7RkZH1yNgQAmYlAB+vRakrDwbbrY2Zj/83MzPzItW1zm4pEBgCQgUMF689kPN3YxtzCwb730tHL8rqqaoGunU4HAGhdNgLmyFkW5s1vT+PLc13iyWxQ3sJbIH5zQAMAFxUPAGxhOAKWgkMFmYNDBoV1PAVdUzACFRQOALBaaqsDRpMYAAAAAElFTkSuQmCC",
-    blurWidth: 7,
+    width: 2824,
+    height: 3550,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAYAAADaxo44AAAA00lEQVR42gHIADf/AP/+/hP9/fxK+vr6g/f39rbs7Om97+/tMgD5+fh47Ovp8uHg3P7i4d3/09HL/cHBvHYA9vb1lOLh3f/Rz8r/2djT/87Nxv+ko56YAPPz8ZnFw8D/f3x5/8C/uv/Pzsf+vby3gADv7+yesrGs/0ZKP/+tq6b/z87H/crJxXQA7u7ro7u5tf9lYV7/uriz/8vJwv6zsq2NAOvq56La2dP/1NPN/9fWz//Hxr7+nZyXpQDu7utBzs3IisnIwqHCwbuptLOrndDPyzx8ipaCkT1zlQAAAABJRU5ErkJggg==",
+    blurWidth: 6,
     blurHeight: 8
 };
 }}),
@@ -808,7 +742,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$
 ;
 function Onduleur() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("flex flex-col", "h-[50rem] lg:h-fit", "items-center lg:items-start", "lg:pl-60 lg:ml-20", "gap-4 lg:gap-0", "bg-secondary", "border-2 border-primary rounded-3xl", "p-8 mt-10 mb-32", "text-white font-emOne", "relative"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("flex flex-col", "h-[50rem] lg:h-fit", "items-center lg:items-start", "lg:pl-60 lg:ml-20", "gap-4 lg:gap-0", "bg-secondary", "border-2 border-primary rounded-3xl", "p-8 mt-10 mb-40 lg:mb-0 lg:mt-20", "text-white font-emOne", "relative"),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("text-2xl lg:text-2xl 2xl:text-4xl", "font-bold uppercase", "pb-1", "font-emOne text-primary", "text-center"),
@@ -867,7 +801,7 @@ function Onduleur() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$onduleur$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$onduleur$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                 alt: "Onduleur",
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("absolute", "-bottom-[9rem] lg:top-1/2", "lg:-translate-y-1/2", "right-0 lg:-left-60", "lg:w-1/2")
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("absolute", "-bottom-[10rem] lg:top-1/2", "lg:-translate-y-1/2", "lg:-left-32", "w-[80%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%]", "filter", "drop-shadow-[0_0_20px_rgba(235,202,78,0.5)]")
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Onduleur.tsx",
                 lineNumber: 73,
@@ -904,7 +838,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 function Article() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-        className: "flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-20 lg:p-24 lg:px-40 2xl:px-36",
+        id: "nos-solutions",
+        className: "flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-80",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "flex flex-col lg:flex-row gap-4",
@@ -917,7 +852,7 @@ function Article() {
                                 children: "Nos solutions solaires"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
-                                lineNumber: 12,
+                                lineNumber: 15,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -925,7 +860,7 @@ function Article() {
                                 children: "Découvrez un panneau solaire qui combine à la fois rendement optimal et économies durables."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
-                                lineNumber: 15,
+                                lineNumber: 18,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -938,7 +873,7 @@ function Article() {
                                         children: "performance énergétique et rapport qualité-prix."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/Products.tsx",
-                                        lineNumber: 23,
+                                        lineNumber: 26,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -946,7 +881,7 @@ function Article() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
-                                lineNumber: 19,
+                                lineNumber: 22,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -954,7 +889,7 @@ function Article() {
                                 children: "Faites le choix de l'excellence solaire avec Genie Solaire."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
-                                lineNumber: 30,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -962,41 +897,41 @@ function Article() {
                                 alt: "Installation solaire"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
-                                lineNumber: 33,
+                                lineNumber: 36,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/home/Products.tsx",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "lg:w-1/2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$Focus$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/components/home/Products.tsx",
-                            lineNumber: 36,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/Products.tsx",
-                        lineNumber: 35,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/home/Products.tsx",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$Stats$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/components/home/Products.tsx",
-                lineNumber: 39,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$Onduleur$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/components/home/Products.tsx",
-                lineNumber: 40,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]

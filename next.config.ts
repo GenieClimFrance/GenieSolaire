@@ -2,10 +2,11 @@
 const nextConfig = {
   output: "standalone",
   experimental: {
-    outputFileTracingRoot: undefined,
+    // Supprimez également cette option si elle n'est pas supportée
+    // outputFileTracingRoot: "../",
   },
   // Optimisations de compilation
-  swcMinify: true,
+  // swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
@@ -45,6 +46,7 @@ const nextConfig = {
       },
     ];
   },
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;
