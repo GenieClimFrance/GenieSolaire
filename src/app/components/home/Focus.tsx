@@ -23,6 +23,7 @@ export default function Focus() {
         expandedWidth="w-24"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}
+        delay={0.4}
       />
 
       <FocusButton
@@ -32,6 +33,7 @@ export default function Focus() {
         expandedWidth="w-16"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}
+        delay={0.8}
       />
 
       <FocusButton
@@ -41,6 +43,7 @@ export default function Focus() {
         expandedWidth="w-20"
         hoveredButton={hoveredButton}
         setHoveredButton={setHoveredButton}
+        delay={1.2}
       />
     </div>
   );

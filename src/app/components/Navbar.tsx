@@ -1,16 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import logo from "@/../public/logo.svg";
+import logoGCF from "@/../public/logo-GCF.svg";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa";
 
 import Link from "next/link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const dropdown = document.querySelector(".dropdown");
+      if (dropdown && !dropdown.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const closeDrawer = () => {
     const checkbox = document.getElementById("my-drawer-3") as HTMLInputElement;
@@ -23,9 +39,31 @@ function Navbar() {
       <div className="drawer-content flex flex-col font-bold">
         {/* Navbar */}
         <div className="navbar w-full flex gap-4 p-4">
-          <Link href="/" className="mx-2 flex-1 px-2">
-            <Image src={logo} alt="logo" width={200} className="lg:w-[300px]" />
-          </Link>
+          <div className={`dropdown relative ${isOpen ? "active" : ""}`}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex items-center gap-2 rounded-lg px-3 py-1 hover:bg-gray-300 transition-colors"
+            >
+              <Image
+                src={logo}
+                alt="logo"
+                width={150}
+                className="lg:w-[200px]"
+              />
+              <FaChevronDown className="text-gray-400 text-xs" />
+            </button>
+            <div className="dropdown-content absolute left-0 top-full bg-white p-4 shadow-lg rounded-lg mt-10 z-50">
+              <a href="https://genieclimfrance.fr">
+                <Image
+                  src={logoGCF}
+                  alt="logo GCF"
+                  width={150}
+                  className="lg:w-[200px] hover:opacity-80 transition-opacity"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="flex-1"></div>
           <div className="flex-none lg:hidden">
             <a
               href="tel:+33972121401"
@@ -82,7 +120,7 @@ function Navbar() {
               <li>
                 <a
                   href="tel:+33972121401"
-                  className="btn rounded-full bg-primary hover:bg-hover text-white flex items-center gap-2"
+                  className="btn rounded-full bg-primary hover:bg-hover text-secondary flex items-center gap-2"
                 >
                   <FaPhoneVolume className="text-xl" />
                   09 72 12 14 01

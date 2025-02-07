@@ -14,7 +14,7 @@ function BannerMid() {
             alt="medals"
             className="w-24 h-24 gap-2 rounded-full bg-primary p-4"
           />
-          <p className="text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
+          <p className="text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14">
             Des professionnels qualifiés à votre écoute
           </p>
         </li>
@@ -24,7 +24,7 @@ function BannerMid() {
             alt="ecolo"
             className="w-24 h-24 rounded-full bg-primary p-3"
           />
-          <p className="text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
+          <p className="text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14">
             Solutions écologiques et économiques
           </p>
         </li>
@@ -34,7 +34,7 @@ function BannerMid() {
             alt="location"
             className="w-24 h-24 gap-2 rounded-full bg-primary p-4"
           />
-          <p className="text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
+          <p className="text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14">
             Intervention dans toute la France
           </p>
         </li>
@@ -44,7 +44,7 @@ function BannerMid() {
             alt="euro"
             className="w-24 h-24 gap-2 rounded-full bg-primary p-4"
           />
-          <p className="text-white flex flex-col text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14">
+          <p className="text-white flex flex-col text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14">
             Devis et étude gratuits
           </p>
         </li>

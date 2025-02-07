@@ -1,5 +1,6 @@
 "use client";
 
+import { BlurFade } from "@/components/blur-fade";
 import { useState, useEffect } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 
@@ -10,6 +11,7 @@ export type FocusButtonProps = {
   expandedWidth: string;
   hoveredButton: string | null;
   setHoveredButton: (value: string | null) => void;
+  delay: number;
 };
 
 // Hook personnalisé pour détecter si l'écran est inférieur à la breakpoint lg (1024px)
@@ -37,6 +39,7 @@ export default function FocusButton({
   expandedWidth,
   hoveredButton,
   setHoveredButton,
+  delay,
 }: FocusButtonProps) {
   const isMobile = useIsMobile();
   const isHovered = hoveredButton === id;
@@ -68,20 +71,22 @@ export default function FocusButton({
       onMouseLeave={!isMobile ? handleMouseLeave : undefined}
       onClick={isMobile ? handleClick : undefined}
     >
-      <button className="bg-yellow-400 rounded-full flex items-center min-w-12 min-h-12 justify-center text-black hover:scale-110 transition-all duration-300 overflow-hidden shadow-xl">
-        <AiOutlinePlusCircle
-          className={`text-3xl transition-all duration-300 transform ${
-            isHovered ? "translate-x-2" : "translate-x-0"
-          }`}
-        />
-        <div
-          className={`overflow-hidden transition-all font-bold duration-300 ${
-            isHovered ? `${expandedWidth} mx-2 opacity-100` : "w-0 opacity-0"
-          }`}
-        >
-          <span className="text-sm whitespace-nowrap">{label}</span>
-        </div>
-      </button>
+      <BlurFade delay={delay} inView>
+        <button className="bg-yellow-400 rounded-full flex items-center min-w-12 min-h-12 justify-center text-black hover:scale-110 transition-all duration-300 overflow-hidden shadow-xl">
+          <AiOutlinePlusCircle
+            className={`text-3xl transition-all duration-300 transform ${
+              isHovered ? "translate-x-2" : "translate-x-0"
+            }`}
+          />
+          <div
+            className={`overflow-hidden transition-all font-bold duration-300 ${
+              isHovered ? `${expandedWidth} mx-2 opacity-100` : "w-0 opacity-0"
+            }`}
+          >
+            <span className="text-sm whitespace-nowrap">{label}</span>
+          </div>
+        </button>
+      </BlurFade>
     </div>
   );
 }

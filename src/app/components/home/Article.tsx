@@ -10,7 +10,7 @@ function Article() {
         <h2 className="font-bold uppercase font-emOne mb-1">
           <TypingAnimation
             className="text-2xl lg:text-3xl 2xl:text-4xl"
-            duration={80}
+            duration={100}
             startOnView={true}
           >
             Génie Solaire france
@@ -38,9 +38,7 @@ function Article() {
         </BlurFade>
       </div>
       <div className="lg:w-fit lg:pl-16">
-        <BlurFade delay={1.5} duration={0.7} inView>
-          <Image src={imgGcf} alt="Génieclim france" />
-        </BlurFade>
+        <Image src={imgGcf} alt="Génieclim france" />
       </div>
     </article>
   );

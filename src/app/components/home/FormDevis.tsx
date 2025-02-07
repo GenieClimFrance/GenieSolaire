@@ -183,7 +183,7 @@ function FormDevis() {
                 </p>
               </label>
             </div>
-            <button className="btn border-none text-tertiary bg-primary hover:bg-primary/80 uppercase mt-6 font-emOne focus:outline-tertiary focus:ring-tertiary">
+            <button className="btn border-none text-secondary bg-primary hover:bg-primary/80 uppercase mt-6 font-emOne focus:outline-tertiary focus:ring-tertiary">
               Soumettre ma demande
             </button>
           </label>

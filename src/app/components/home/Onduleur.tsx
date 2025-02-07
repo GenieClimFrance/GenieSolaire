@@ -8,7 +8,7 @@ function Onduleur() {
     <section
       className={twMerge(
         "flex flex-col",
-        "h-[50rem] lg:h-fit",
+        "h-[42rem] lg:h-fit",
         "items-center lg:items-start",
         "lg:pl-60 lg:ml-20",
         "gap-4 lg:gap-0",
