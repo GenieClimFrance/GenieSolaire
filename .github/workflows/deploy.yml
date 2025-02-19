@@ -15,21 +15,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          # Retirons la configuration du cache qui cause l'erreur
-          # cache: 'npm'
-
-      - name: Debug Info
-        run: |
-          echo "Current directory:"
-          pwd
-          echo "Repository contents:"
-          ls -la
-          echo "Git branch:"
-          git branch --show-current
 
       - name: Install CapRover CLI
         run: |
-          npm install -g caprover
+          npm install -g caprover@latest
           caprover --version
 
       - name: Login to Docker Hub
@@ -45,19 +34,17 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest
 
-      - name: Debug Before Deploy
-        run: |
-          echo "Deploying to URL: ${{ secrets.CAPROVER_URL }}"
-          echo "App name: ${{ secrets.APP_NAME }}"
-          echo "Docker image: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest"
-
       - name: Deploy to CapRover
         env:
           APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN }}
         run: |
+          # Attendre quelques secondes pour s'assurer que l'image est disponible
+          sleep 5
+
+          # Tentative de déploiement avec plus de détails
           caprover deploy \
             --caproverUrl "${{ secrets.CAPROVER_URL }}" \
             --appToken "$APP_TOKEN" \
             --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
             --appName "${{ secrets.APP_NAME }}" \
-            --skipUpdate
+            --verbose
