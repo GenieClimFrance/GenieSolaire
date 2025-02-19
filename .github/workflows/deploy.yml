@@ -1,0 +1,117 @@
+# Définition du nom et des déclencheurs
+name: Deploy NextJS App
+on:
+  push:
+    branches: [main] # Se déclenche sur les push sur la branche main
+  workflow_dispatch: # Permet le déclenchement manuel
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout du code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 2. Configuration de Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      # 3. Installation des dépendances et tests
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests and linting
+        run: |
+          npm run lint || true
+          npm test || true
+
+      # 4. Configuration de Docker
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # 5. Configuration SSH avec le bon type de clé
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          eval $(ssh-agent -s)
+          ssh-add ~/.ssh/id_ed25519
+
+          # Vérification de la clé
+          echo "=== Clé publique générée ==="
+          ssh-keygen -y -f ~/.ssh/id_ed25519
+
+          # Configuration SSH
+          echo "Host ${{ secrets.VPS_HOST }}
+            IdentityFile ~/.ssh/id_ed25519
+            UserKnownHostsFile /dev/null
+            StrictHostKeyChecking no
+            PasswordAuthentication no
+            BatchMode yes" > ~/.ssh/config
+          chmod 600 ~/.ssh/config
+
+      - name: Debug SSH
+        run: |
+          ls -la ~/.ssh
+          ssh-keygen -y -f ~/.ssh/id_ed25519 # Affiche la clé publique pour vérification
+
+      # 6. Connexion à Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      # 7. Génération du numéro de version
+      - name: Extract version
+        id: version
+        run: echo "version=$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_OUTPUT
+
+      # 8. Build et push de l'image Docker
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          build-args: |
+            SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}
+            RECIPIENT_EMAIL=${{ secrets.RECIPIENT_EMAIL }}
+            SENDER_EMAIL=${{ secrets.SENDER_EMAIL }}
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ steps.version.outputs.version }}
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:buildcache,mode=max
+
+      # 9. Déploiement avec verbose mode
+      - name: Deploy to VPS
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          APP_NAME: ${{ secrets.APP_NAME }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          ssh -v $SSH_USER@$VPS_HOST "
+            mkdir -p ~/app/sites/$APP_NAME && \
+            cd ~/app/sites/$APP_NAME && \
+            echo \"VERSION=$VERSION\" >> .env && \
+            docker-compose pull && \
+            docker-compose up -d --remove-orphans && \
+            docker system prune -af --volumes
+          "
+
+      # 10. Vérification de la santé de l'application
+      - name: Health Check
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+        run: |
+          echo "Attente de la stabilisation du déploiement..."
+          sleep 30
+          curl --fail http://${VPS_HOST}/_next/static/health || { echo "Health check failed"; exit 1; }

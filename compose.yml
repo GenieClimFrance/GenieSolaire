@@ -5,12 +5,12 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=3001
       - SENDGRID_API_KEY=${SENDGRID_API_KEY}
       - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
       - SENDER_EMAIL=${SENDER_EMAIL}
     ports:
-      - "3000:3000"
+      - "3001:3001"
     networks:
       - nginx-proxy
     # Vous pouvez ajouter des labels pour le reverse proxy, par exemple :
