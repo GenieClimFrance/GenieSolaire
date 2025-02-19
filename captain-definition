@@ -1,9 +1,4 @@
 {
   "schemaVersion": 2,
-  "dockerfilePath": "./Dockerfile",
-  "containerHttpPort": 3000,
-  "buildSettings": {
-    "useCache": true,
-    "buildArguments": []
-  }
+  "dockerfilePath": "Dockerfile"
 }
