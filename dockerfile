@@ -15,6 +15,12 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Ajout d'un fichier robots.txt
+RUN echo "User-agent: *\nAllow: /" > ./public/robots.txt
+
+# Ajout d'un favicon.ico par défaut
+RUN touch ./public/favicon.ico
+
 # Variables d'environnement de build
 ARG SENDGRID_API_KEY
 ARG RECIPIENT_EMAIL
@@ -26,6 +32,7 @@ ENV SENDGRID_API_KEY=${SENDGRID_API_KEY}
 ENV RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
 ENV SENDER_EMAIL=${SENDER_EMAIL}
 ENV PORT=80
+ENV HOSTNAME="0.0.0.0"
 
 # Build de l'application
 RUN npm run build

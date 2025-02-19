@@ -41,7 +41,7 @@ jobs:
 
           # Configuration du déploiement avec l'URL nip.io
           caprover deploy \
-            --caproverUrl "https://captain.195.35.48.112.nip.io" \
-            --appToken "${{ secrets.CAPROVER_APP_TOKEN }}" \
-            --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
-            --appName "${{ secrets.APP_NAME }}"
+          --caproverUrl "https://captain.195.35.48.112.nip.io" \
+          --appToken "${{ secrets.CAPROVER_APP_TOKEN }}" \
+          --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
+          --appName "${{ secrets.APP_NAME }}"
