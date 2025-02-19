@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apk add --no-cache libc6-compat python3 make g++
 
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 
 # Stage 2: Builder
 FROM node:18-alpine AS builder
