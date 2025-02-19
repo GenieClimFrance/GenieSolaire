@@ -25,6 +25,7 @@ ENV NODE_ENV=production
 ENV SENDGRID_API_KEY=${SENDGRID_API_KEY}
 ENV RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
 ENV SENDER_EMAIL=${SENDER_EMAIL}
+ENV PORT=80
 
 # Build de l'application
 RUN npm run build
@@ -60,7 +61,7 @@ EXPOSE 80
 
 # Healthcheck
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD wget -qO- http://localhost:3000/_next/static/health || exit 1
+    CMD wget -qO- http://localhost:80/ || exit 1
 
 # Ajout d'une commande pour vérifier le contenu
 RUN ls -la
