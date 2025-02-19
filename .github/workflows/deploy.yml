@@ -34,19 +34,14 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest
 
-      - name: Debug CapRover Info
-        run: |
-          echo "CapRover URL: ${{ secrets.CAPROVER_URL }}"
-          echo "App Name: ${{ secrets.APP_NAME }}"
-          echo "Image: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest"
-
       - name: Deploy to CapRover
         run: |
-          # Attendre que l'image soit disponible
-          sleep 5
+          # Installation de la dernière version de CapRover CLI
+          npm install -g caprover@latest
 
+          # Configuration du déploiement avec l'URL nip.io
           caprover deploy \
-            --caproverUrl "${{ secrets.CAPROVER_URL }}" \
+            --caproverUrl "https://captain.195.35.48.112.nip.io" \
             --appToken "${{ secrets.CAPROVER_APP_TOKEN }}" \
             --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
             --appName "${{ secrets.APP_NAME }}"
