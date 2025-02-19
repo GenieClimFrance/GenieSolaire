@@ -34,17 +34,19 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest
 
-      - name: Deploy to CapRover
-        env:
-          APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN }}
+      - name: Debug CapRover Info
         run: |
-          # Attendre quelques secondes pour s'assurer que l'image est disponible
+          echo "CapRover URL: ${{ secrets.CAPROVER_URL }}"
+          echo "App Name: ${{ secrets.APP_NAME }}"
+          echo "Image: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest"
+
+      - name: Deploy to CapRover
+        run: |
+          # Attendre que l'image soit disponible
           sleep 5
 
-          # Tentative de déploiement avec plus de détails
           caprover deploy \
             --caproverUrl "${{ secrets.CAPROVER_URL }}" \
-            --appToken "$APP_TOKEN" \
+            --appToken "${{ secrets.CAPROVER_APP_TOKEN }}" \
             --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
-            --appName "${{ secrets.APP_NAME }}" \
-            --verbose
+            --appName "${{ secrets.APP_NAME }}"
