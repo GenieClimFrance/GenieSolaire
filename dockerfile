@@ -1,4 +1,4 @@
-# Stage 1: Dépendances
+# Stage 1: Dependencies
 FROM node:18-alpine AS deps
 WORKDIR /app
 
@@ -33,8 +33,10 @@ RUN npm run build
 FROM node:18-alpine AS runner
 WORKDIR /app
 
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
 
 # Création d'un utilisateur non-root
 RUN addgroup --system --gid 1001 nodejs
@@ -55,10 +57,6 @@ USER nextjs
 
 # Exposition du port
 EXPOSE 3000
-
-# Variables d'environnement runtime
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
 
 # Healthcheck
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
