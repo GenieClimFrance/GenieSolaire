@@ -56,7 +56,8 @@ jobs:
           APP_TOKEN: ${{ secrets.CAPROVER_APP_TOKEN }}
         run: |
           caprover deploy \
-            --caproverUrl ${{ secrets.CAPROVER_URL }} \
-            --appToken $APP_TOKEN \
-            --imageName ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest \
-            --appName ${{ secrets.APP_NAME }}
+            --caproverUrl "${{ secrets.CAPROVER_URL }}" \
+            --appToken "$APP_TOKEN" \
+            --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
+            --appName "${{ secrets.APP_NAME }}" \
+            --skipUpdate
