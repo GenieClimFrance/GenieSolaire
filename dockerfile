@@ -31,7 +31,7 @@ ENV NODE_ENV=production
 ENV SENDGRID_API_KEY=${SENDGRID_API_KEY}
 ENV RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
 ENV SENDER_EMAIL=${SENDER_EMAIL}
-ENV PORT=80
+ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
 # Build de l'application
@@ -64,11 +64,11 @@ RUN chown -R nextjs:nodejs /app
 USER nextjs
 
 # Exposition du port
-EXPOSE 80
+EXPOSE 3000
 
 # Healthcheck plus simple
 HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
-    CMD node -e "require('http').get('http://localhost:80/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))" || exit 1
+    CMD node -e "require('http').get('http://localhost:3000/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))" || exit 1
 
 # Ajout d'une commande pour vérifier le contenu
 RUN ls -la

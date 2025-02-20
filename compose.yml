@@ -5,31 +5,27 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - PORT=80
+      - PORT=3000
       - SENDGRID_API_KEY=${SENDGRID_API_KEY}
       - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
       - SENDER_EMAIL=${SENDER_EMAIL}
     expose:
-      - "80"
+      - "3000"
     networks:
       - nginx-proxy
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.${APP_NAME}.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
-      - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=80"
-      - "traefik.http.routers.${APP_NAME}.entrypoints=web,websecure"
-      - "traefik.http.routers.${APP_NAME}.tls=true"
-      - "traefik.http.middlewares.${APP_NAME}-redirect.redirectscheme.scheme=https"
-      - "traefik.http.routers.${APP_NAME}-http.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
-      - "traefik.http.routers.${APP_NAME}-http.entrypoints=web"
-      - "traefik.http.routers.${APP_NAME}-http.middlewares=${APP_NAME}-redirect"
+      - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=3000"
+      - "traefik.http.routers.${APP_NAME}.entrypoints=web"
+      - "traefik.docker.network=nginx-proxy"
     healthcheck:
       test:
         [
           "CMD",
           "node",
           "-e",
-          "require('http').get('http://localhost:80/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))",
+          "require('http').get('http://localhost:3000/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))",
         ]
       interval: 30s
       timeout: 10s
