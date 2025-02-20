@@ -3,7 +3,7 @@ FROM node:18-alpine AS deps
 WORKDIR /app
 
 # Installation des dépendances pour les paquets natifs
-RUN apk add --no-cache libc6-compat python3 make g++
+RUN apk add --no-cache libc6-compat python3 make g++ curl
 
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
@@ -67,8 +67,8 @@ USER nextjs
 EXPOSE 80
 
 # Healthcheck
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD wget -qO- http://localhost:80/ || exit 1
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
+    CMD curl -f http://localhost:80/ || exit 1
 
 # Ajout d'une commande pour vérifier le contenu
 RUN ls -la
