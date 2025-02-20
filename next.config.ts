@@ -1,3 +1,5 @@
+import type { Configuration } from "webpack";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
@@ -47,6 +49,15 @@ const nextConfig = {
     ];
   },
   reactStrictMode: true,
+  webpack: (config: Configuration, { isServer }: { isServer: boolean }) => {
+    if (!isServer) {
+      config.watchOptions = {
+        poll: 1000,
+        aggregateTimeout: 300,
+      };
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
