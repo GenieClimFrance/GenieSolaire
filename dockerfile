@@ -26,7 +26,7 @@ ARG SENDGRID_API_KEY
 ARG RECIPIENT_EMAIL
 ARG SENDER_EMAIL
 
-ENV NEXT_TELEMETRY_DISABLED=1
+ENV NEXT_TELEMETRY_DISABLED=1 
 ENV NODE_ENV=production
 ENV SENDGRID_API_KEY=${SENDGRID_API_KEY}
 ENV RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
@@ -67,8 +67,8 @@ USER nextjs
 EXPOSE 3000
 
 # Healthcheck
-HEALTHCHECK --interval=30s --timeout=30s --start-period=60s --retries=5 \
-    CMD node -e "require('http').get('http://localhost:3000/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))" || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/ || exit 1
 
 # Démarrage de l'application
 CMD ["node", "server.js"]
