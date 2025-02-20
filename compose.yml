@@ -15,7 +15,7 @@ services:
       - nginx-proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.${APP_NAME}.rule=Host(`geniesolaire.195.35.48.112.nip.io`)"
+      - "traefik.http.routers.${APP_NAME}.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
       - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=80"
       - "traefik.http.routers.${APP_NAME}.entrypoints=websecure"
       - "traefik.http.routers.${APP_NAME}.tls=true"
