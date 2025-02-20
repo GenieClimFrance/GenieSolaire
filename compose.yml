@@ -14,9 +14,14 @@ services:
     labels:
       - "coolify.managed=true"
       - "traefik.enable=true"
-      - "traefik.http.routers.geniesolaire.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
-      - "traefik.http.routers.geniesolaire.entrypoints=http"
       - "traefik.http.services.geniesolaire.loadbalancer.server.port=3000"
+      - "traefik.http.routers.geniesolaire.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
+      - "traefik.http.routers.geniesolaire.entrypoints=websecure,web"
+      - "traefik.http.routers.geniesolaire.service=geniesolaire"
+      - "traefik.http.routers.geniesolaire-http.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
+      - "traefik.http.routers.geniesolaire-http.entrypoints=web"
+      - "traefik.http.routers.geniesolaire-http.middlewares=https-redirect"
+      - "traefik.http.middlewares.https-redirect.redirectscheme.scheme=https"
       - "traefik.docker.network=coolify"
     expose:
       - "3000"
@@ -25,7 +30,7 @@ services:
       test:
         [
           "CMD-SHELL",
-          "wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1",
+          "wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/ || exit 1",
         ]
       interval: 30s
       timeout: 10s
