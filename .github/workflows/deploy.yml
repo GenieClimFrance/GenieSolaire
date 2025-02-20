@@ -27,3 +27,4 @@ jobs:
       - name: Trigger Coolify Deployment
         run: |
           curl -X POST ${{ secrets.COOLIFY_WEBHOOK_URL }}
+        if: success()
