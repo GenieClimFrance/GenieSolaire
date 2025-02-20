@@ -10,14 +10,14 @@ services:
       - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
       - SENDER_EMAIL=${SENDER_EMAIL}
     networks:
-      - traefik-public
+      - coolify
     labels:
       - "coolify.managed=true"
       - "traefik.enable=true"
       - "traefik.http.routers.geniesolaire.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
       - "traefik.http.routers.geniesolaire.entrypoints=http"
       - "traefik.http.services.geniesolaire.loadbalancer.server.port=3000"
-      - "traefik.docker.network=traefik-public"
+      - "traefik.docker.network=coolify"
     expose:
       - "3000"
     container_name: geniesolaire
@@ -33,5 +33,5 @@ services:
       start_period: 40s
 
 networks:
-  traefik-public:
+  coolify:
     external: true
