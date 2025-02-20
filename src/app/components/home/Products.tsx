@@ -8,14 +8,14 @@ function Article() {
   return (
     <article
       id="nos-solutions"
-      className="flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-80"
+      className="flex flex-col md:items-center md:justify-center xl:gap-14 p-8 xl:px-40 md:p-24 md:px-40 2xl:px-80"
     >
-      <section className="flex flex-col lg:flex-row gap-4">
-        <div className="lg:w-1/2 2xl:text-xl">
-          <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-bold uppercase pb-8 font-emOne after:content-[''] after:mt-2 after:block after:w-10 after:h-[0.35rem] after:bg-primary">
+      <section className="flex flex-col md:flex-row gap-4">
+        <div className="md:w-1/2 2xl:text-xl">
+          <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold uppercase pb-8 font-emOne after:content-[''] after:mt-2 after:block after:w-10 after:h-[0.35rem] after:bg-primary">
             Nos solutions solaires
           </h2>
-          <p className="pb-4 font-bold font-kollektif lg:pt-6">
+          <p className="pb-4 font-bold font-kollektif md:pt-6">
             Découvrez un panneau solaire qui combine à la fois rendement optimal
             et économies durables.
           </p>
@@ -35,7 +35,7 @@ function Article() {
           </p>
           <Image src={install} alt="Installation solaire" />
         </div>
-        <div className="lg:w-1/2">
+        <div className="md:w-1/2">
           <Focus />
         </div>
       </section>

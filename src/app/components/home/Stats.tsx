@@ -2,13 +2,13 @@ import { NumberTicker } from "@/components/number-ticker";
 
 function Stats() {
   return (
-    <section className="flex flex-col lg:flex-row xl:w-full items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 lg:p-10 mt-10 lg:mt-20 text-white font-emOne">
-      <ul className="flex flex-col lg:flex-row items-center  lg:gap-20 xl:gap-28 justify-center gap-10 uppercase">
+    <section className="flex flex-col md:flex-row xl:w-full items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 md:p-10 mt-10 lg:mt-20 text-white font-emOne">
+      <ul className="flex flex-col md:flex-row items-center  lg:gap-20 xl:gap-28 justify-center gap-10 uppercase">
         <li className="flex flex-col items-center">
           <div className="flex items-center">
             <NumberTicker
               value={460}
-              className="text-5xl text-white lg:text-5xl text-center"
+              className="text-5xl text-white md:text-3xl lg:text-5xl text-center"
             />
             <span className="text-5xl text-white lg:text-5xl">W</span>
           </div>

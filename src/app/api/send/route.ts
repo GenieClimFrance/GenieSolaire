@@ -20,22 +20,38 @@ interface SendGridErrorResponse {
 }
 
 export async function POST(request: Request) {
+  if (!apiKey) {
+    console.error("Clé API SendGrid manquante");
+    return NextResponse.json(
+      { message: "Configuration du serveur d'emails manquante" },
+      { status: 500 }
+    );
+  }
+
   try {
     const body = await request.json();
     const { nom, email, telephone, message, adresse, codePostal } = body;
 
-    if (!nom || !email || !message) {
+    // Validation de l'email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!nom || !email || !message || !emailRegex.test(email)) {
       return NextResponse.json(
-        { message: "Champs obligatoires manquants" },
+        {
+          message: "Champs obligatoires manquants ou email invalide",
+          details: !emailRegex.test(email)
+            ? "Format d'email invalide"
+            : "Champs manquants",
+        },
         { status: 400 }
       );
     }
 
     const msg = {
-      to: process.env.RECIPIENT_EMAIL || "a.janiak@genieclimfrance.fr",
+      to: process.env.RECIPIENT_EMAIL || "contact@geniesolairefrance.fr",
       from: {
-        email: process.env.SENDER_EMAIL || "a.janiak@genieclimfrance.fr",
-        name: "GENIE CLIM FRANCE",
+        email:
+          process.env.VERIFIED_SENDER_EMAIL || "contact@geniesolairefrance.fr",
+        name: "GENIE SOLAIRE FRANCE",
       },
       subject: `Nouveau message de ${nom} depuis le formulaire de contact`,
       text: `
@@ -57,9 +73,21 @@ export async function POST(request: Request) {
     };
 
     try {
+      console.log("Tentative d'envoi avec configuration:", {
+        to: msg.to,
+        from: msg.from.email,
+        subject: msg.subject,
+        apiKeyPresent: !!apiKey,
+      });
+
       await sgMail.send(msg);
       return NextResponse.json({ message: "Email envoyé avec succès" });
     } catch (sendError: unknown) {
+      console.error("Erreur SendGrid détaillée:", {
+        error: sendError,
+        response: (sendError as any).response?.body,
+        stack: (sendError as Error).stack,
+      });
       if (
         sendError &&
         typeof sendError === "object" &&
@@ -75,8 +103,13 @@ export async function POST(request: Request) {
           { status: typedError.code || 500 }
         );
       }
+      return NextResponse.json(
+        { message: "Erreur lors de l'envoi de l'email" },
+        { status: 500 }
+      );
     }
-  } catch {
+  } catch (error) {
+    console.error("Erreur générale:", error);
     return NextResponse.json(
       { message: "Erreur lors du traitement de la requête" },
       { status: 500 }
