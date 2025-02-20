@@ -16,6 +16,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.${APP_NAME}.rule=Host(`geniesolaire.195.35.48.112.nip.io`)"
+      - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=80"
+      - "traefik.http.routers.${APP_NAME}.entrypoints=websecure"
+      - "traefik.http.routers.${APP_NAME}.tls=true"
     # Vous pouvez ajouter des labels pour le reverse proxy, par exemple :
     # labels:
     #   - "VIRTUAL_HOST=www.mondomaine.com"

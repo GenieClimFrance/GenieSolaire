@@ -129,7 +129,7 @@ function Article() {
                         className: "font-bold uppercase font-emOne mb-1",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typing$2d$animation$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TypingAnimation"], {
                             className: "text-2xl lg:text-3xl 2xl:text-4xl",
-                            duration: 80,
+                            duration: 100,
                             startOnView: true,
                             children: "Génie Solaire france"
                         }, void 0, false, {
@@ -202,18 +202,9 @@ function Article() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "lg:w-fit lg:pl-16",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$blur$2d$fade$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["BlurFade"], {
-                    delay: 1.5,
-                    duration: 0.7,
-                    inView: true,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$img$2d$gcf$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$img$2d$gcf$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                        alt: "Génieclim france"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/components/home/Article.tsx",
-                        lineNumber: 42,
-                        columnNumber: 11
-                    }, this)
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$img$2d$gcf$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$img$2d$gcf$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                    alt: "Génieclim france"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/home/Article.tsx",
                     lineNumber: 41,
@@ -367,7 +358,7 @@ function BannerMid() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
+                            className: "text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14",
                             children: "Des professionnels qualifiés à votre écoute"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
@@ -393,7 +384,7 @@ function BannerMid() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
+                            className: "text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14",
                             children: "Solutions écologiques et économiques"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
@@ -419,7 +410,7 @@ function BannerMid() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-white text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
+                            className: "text-white text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14",
                             children: "Intervention dans toute la France"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
@@ -445,7 +436,7 @@ function BannerMid() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-white flex flex-col text-center font-emOne text-xs px-4 lg:px-3 2xl:px-14",
+                            className: "text-white flex flex-col text-center font-emOne text-xs lg:text-sm px-4 lg:px-3 2xl:px-14",
                             children: "Devis et étude gratuits"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/BannerMid.tsx",
@@ -495,14 +486,21 @@ function Hero() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-white text-2xl lg:text-5xl xl:text-6xl lg:leading-tight xl:leading-tight uppercase font-bold mb-8",
                         children: [
-                            "Votre installation de panneaux solaires",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "[text-shadow:_2px_2px_4px_rgb(0_0_0_/_20%)]",
+                                children: "Votre installation de panneaux solaires"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/home/Hero.tsx",
+                                lineNumber: 9,
+                                columnNumber: 13
+                            }, this),
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-primary bg-tertiary rounded-full px-2 lg:px-5 text-nowrap",
+                                className: "text-primary bg-tertiary rounded-full px-2 lg:px-5 text-nowrap [box-shadow:_2px_2px_4px_rgb(0_0_0_/_20%)]",
                                 children: "sur mesure"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Hero.tsx",
-                                lineNumber: 10,
+                                lineNumber: 12,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -512,27 +510,27 @@ function Hero() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-white text-xl lg:text-3xl font-bold uppercase lg:pr-72 xl:mt-8",
+                        className: "text-white text-xl lg:text-3xl font-bold uppercase lg:pr-72 xl:mt-8 [text-shadow:_2px_2px_2px_rgb(0_0_0_/_20%)]",
                         children: "Transformez votre toit en source d'énergie ! économisez dès aujourd'hui avec nos solutions solaires."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/Hero.tsx",
-                        lineNumber: 14,
+                        lineNumber: 16,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col pt-8 lg:flex-row lg:items-center lg:mt-10 xl:mt-16 font-emOne lg:gap-8 xl:gap-10",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             href: "/#contact-form",
-                            className: "btn xl:btn-lg bg-secondary border-none text-white text-md xl:text-lg font-bold uppercase mt-4 lg:mt-0 px-4 rounded-full hover:bg-secondary/80",
+                            className: "btn xl:btn-lg bg-secondary border-none text-white text-md xl:text-lg font-bold uppercase mt-4 lg:mt-0 px-4 rounded-full hover:bg-secondary/80 shadow-lg",
                             children: "Contactez-nous"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/home/Hero.tsx",
-                            lineNumber: 19,
+                            lineNumber: 21,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/Hero.tsx",
-                        lineNumber: 18,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, this)
                 ]
@@ -744,9 +742,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$number$
 ;
 function Stats() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "flex flex-col lg:flex-row xl:w-full items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 lg:p-10 mt-10 lg:mt-20 text-white font-emOne",
+        className: "flex flex-col md:flex-row xl:w-full items-center justify-center bg-secondary border-2 border-primary rounded-3xl p-8 md:p-10 mt-10 lg:mt-20 text-white font-emOne",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-            className: "flex flex-col lg:flex-row items-center  lg:gap-20 xl:gap-28 justify-center gap-10 uppercase",
+            className: "flex flex-col md:flex-row items-center  lg:gap-20 xl:gap-28 justify-center gap-10 uppercase",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                     className: "flex flex-col items-center",
@@ -756,7 +754,7 @@ function Stats() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$number$2d$ticker$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NumberTicker"], {
                                     value: 460,
-                                    className: "text-5xl text-white lg:text-5xl text-center"
+                                    className: "text-5xl text-white md:text-3xl lg:text-5xl text-center"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/home/Stats.tsx",
                                     lineNumber: 9,
@@ -1012,10 +1010,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$
 ;
 function Onduleur() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("flex flex-col", "h-[50rem] lg:h-fit", "items-center lg:items-start", "lg:pl-60 lg:ml-20", "gap-4 lg:gap-0", "bg-secondary", "border-2 border-primary rounded-3xl", "p-8 mt-10 mb-40 lg:mb-0 lg:mt-20", "text-white font-emOne", "relative"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("flex flex-col", "h-[45rem] sm:h-[35rem] md:h-fit", "items-center md:items-start", "md:pl-60 md:ml-20", "gap-4 md:gap-0", "bg-secondary", "border-2 border-primary rounded-3xl", "p-8 mt-10 mb-40 md:mb-0 md:mt-20", "text-white font-emOne", "relative"),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("text-2xl lg:text-2xl 2xl:text-4xl", "font-bold uppercase", "pb-1", "font-emOne text-primary", "text-center"),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("text-2xl md:text-2xl 2xl:text-4xl", "font-bold uppercase", "pb-1", "font-emOne text-primary", "text-center"),
                 children: "Pas de panneaux sans onduleur"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Onduleur.tsx",
@@ -1023,7 +1021,7 @@ function Onduleur() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("text-lg lg:text-base 2xl:text-xl", "font-bold italic uppercase", "pb-4", "font-emOne", "text-center"),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("text-lg md:text-base 2xl:text-xl", "font-bold italic uppercase", "pb-4", "font-emOne", "text-center"),
                 children: "Solax x1 Hybrid-G4"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Onduleur.tsx",
@@ -1072,7 +1070,7 @@ function Onduleur() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$onduleur$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$onduleur$2e$png__$5b$app$2d$rsc$5d$__$28$static$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                 alt: "Onduleur",
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("absolute", "-bottom-[10rem] lg:top-1/2", "lg:-translate-y-1/2", "lg:-left-32", "w-[80%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%]", "filter", "drop-shadow-[0_0_20px_rgba(235,202,78,0.5)]")
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["twMerge"])("absolute", "-bottom-[10rem] md:top-1/2", "md:-translate-y-1/2", "md:-left-32", "w-[80%] md:w-[35%] xl:w-[30%] 2xl:w-[25%]", "filter", "drop-shadow-[0_0_20px_rgba(235,202,78,0.5)]")
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Onduleur.tsx",
                 lineNumber: 60,
@@ -1110,16 +1108,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 function Article() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
         id: "nos-solutions",
-        className: "flex flex-col lg:items-center lg:justify-center xl:gap-14 p-8 xl:px-40 lg:p-24 lg:px-40 2xl:px-80",
+        className: "flex flex-col md:items-center md:justify-center xl:gap-14 p-8 xl:px-40 md:p-24 md:px-40 2xl:px-80",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "flex flex-col lg:flex-row gap-4",
+                className: "flex flex-col md:flex-row gap-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lg:w-1/2 2xl:text-xl",
+                        className: "md:w-1/2 2xl:text-xl",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-2xl lg:text-3xl 2xl:text-4xl font-bold uppercase pb-8 font-emOne after:content-[''] after:mt-2 after:block after:w-10 after:h-[0.35rem] after:bg-primary",
+                                className: "text-2xl md:text-3xl 2xl:text-4xl font-bold uppercase pb-8 font-emOne after:content-[''] after:mt-2 after:block after:w-10 after:h-[0.35rem] after:bg-primary",
                                 children: "Nos solutions solaires"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
@@ -1127,7 +1125,7 @@ function Article() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "pb-4 font-bold font-kollektif lg:pt-6",
+                                className: "pb-4 font-bold font-kollektif md:pt-6",
                                 children: "Découvrez un panneau solaire qui combine à la fois rendement optimal et économies durables."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/home/Products.tsx",
@@ -1178,7 +1176,7 @@ function Article() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lg:w-1/2",
+                        className: "md:w-1/2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$Focus$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/components/home/Products.tsx",
                             lineNumber: 39,

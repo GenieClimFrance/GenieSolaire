@@ -450,7 +450,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function InfoContact() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "lg:flex lg:flex-col gap-4 p-6 lg:w-1/3 bg-secondary text-tertiary hidden rounded-3xl",
+        className: "lg:flex lg:flex-col gap-4 p-6 lg:w-1/3 h-fit bg-secondary text-tertiary hidden rounded-3xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                 className: "text-2xl font-emOne text-tertiary",
@@ -461,7 +461,7 @@ function InfoContact() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Téléphone: +33 9 72 12 14 02"
+                children: "Téléphone: +33 9 72 12 14 01"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/InfoContact.tsx",
                 lineNumber: 5,
@@ -476,7 +476,7 @@ function InfoContact() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                 className: "font-bold text-primary uppercase",
-                children: "génieclim france - Siège social"
+                children: "Génie Solaire France - Siège social"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/InfoContact.tsx",
                 lineNumber: 7,
@@ -487,51 +487,6 @@ function InfoContact() {
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/InfoContact.tsx",
                 lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                className: "font-bold text-primary uppercase",
-                children: "Génieclim aquitaine nord"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "42 avenue de la Roque, 24100 CREYSSE"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                className: "font-bold text-primary uppercase",
-                children: "génieclim Haut de france"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 15,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "5 rue des Chauffours, immeuble Ordinal / Les bureaux 95000 CERGY"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                className: "font-bold text-primary uppercase",
-                children: "génieclim occitanie"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "4 rue Pierre Magnol, Mas de la Guarrigue, 66600 RIVESALTES"
-            }, void 0, false, {
-                fileName: "[project]/src/app/components/home/InfoContact.tsx",
-                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
@@ -950,7 +905,7 @@ function FormDevis() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "btn border-none text-tertiary bg-primary hover:bg-primary/80 uppercase mt-6 font-emOne focus:outline-tertiary focus:ring-tertiary",
+                                        className: "btn border-none text-secondary bg-primary hover:bg-primary/80 uppercase mt-6 font-emOne focus:outline-tertiary focus:ring-tertiary",
                                         children: "Soumettre ma demande"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/home/FormDevis.tsx",
@@ -1032,11 +987,13 @@ __turbopack_esm__({
     "default": (()=>FocusButton)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$blur$2d$fade$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/blur-fade.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ai$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/ai/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature(), _s1 = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 // Hook personnalisé pour détecter si l'écran est inférieur à la breakpoint lg (1024px)
@@ -1061,7 +1018,7 @@ function useIsMobile() {
     return isMobile;
 }
 _s(useIsMobile, "MlmSG3uSWWvVgZvDg0SD4XH58F4=");
-function FocusButton({ id, label, positionClasses, expandedWidth, hoveredButton, setHoveredButton }) {
+function FocusButton({ id, label, positionClasses, expandedWidth, hoveredButton, setHoveredButton, delay }) {
     _s1();
     const isMobile = useIsMobile();
     const isHovered = hoveredButton === id;
@@ -1087,40 +1044,48 @@ function FocusButton({ id, label, positionClasses, expandedWidth, hoveredButton,
         onMouseEnter: !isMobile ? handleMouseEnter : undefined,
         onMouseLeave: !isMobile ? handleMouseLeave : undefined,
         onClick: isMobile ? handleClick : undefined,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "bg-yellow-400 rounded-full flex items-center min-w-12 min-h-12 justify-center text-black hover:scale-110 transition-all duration-300 overflow-hidden shadow-xl",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ai$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AiOutlinePlusCircle"], {
-                    className: `text-3xl transition-all duration-300 transform ${isHovered ? "translate-x-2" : "translate-x-0"}`
-                }, void 0, false, {
-                    fileName: "[project]/src/app/components/home/FocusButton.tsx",
-                    lineNumber: 72,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: `overflow-hidden transition-all font-bold duration-300 ${isHovered ? `${expandedWidth} mx-2 opacity-100` : "w-0 opacity-0"}`,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-sm whitespace-nowrap",
-                        children: label
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$blur$2d$fade$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BlurFade"], {
+            delay: delay,
+            inView: true,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "bg-yellow-400 rounded-full flex items-center min-w-12 min-h-12 justify-center text-black hover:scale-110 transition-all duration-300 overflow-hidden shadow-xl",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ai$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AiOutlinePlusCircle"], {
+                        className: `text-3xl transition-all duration-300 transform ${isHovered ? "translate-x-2" : "translate-x-0"}`
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/home/FocusButton.tsx",
-                        lineNumber: 82,
+                        lineNumber: 76,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `overflow-hidden transition-all font-bold duration-300 ${isHovered ? `${expandedWidth} mx-2 opacity-100` : "w-0 opacity-0"}`,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "text-sm whitespace-nowrap",
+                            children: label
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/home/FocusButton.tsx",
+                            lineNumber: 86,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/home/FocusButton.tsx",
+                        lineNumber: 81,
                         columnNumber: 11
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/app/components/home/FocusButton.tsx",
-                    lineNumber: 77,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/home/FocusButton.tsx",
+                lineNumber: 75,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/app/components/home/FocusButton.tsx",
-            lineNumber: 71,
+            lineNumber: 74,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/components/home/FocusButton.tsx",
-        lineNumber: 65,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 }
@@ -1177,7 +1142,8 @@ function Focus() {
                 positionClasses: "absolute top-[25%] left-[30%] xl:left-[40%]",
                 expandedWidth: "w-24",
                 hoveredButton: hoveredButton,
-                setHoveredButton: setHoveredButton
+                setHoveredButton: setHoveredButton,
+                delay: 0.4
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Focus.tsx",
                 lineNumber: 19,
@@ -1189,10 +1155,11 @@ function Focus() {
                 positionClasses: "absolute top-[45%] right-[10%] xl:right-[20%]",
                 expandedWidth: "w-16",
                 hoveredButton: hoveredButton,
-                setHoveredButton: setHoveredButton
+                setHoveredButton: setHoveredButton,
+                delay: 0.8
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Focus.tsx",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$home$2f$FocusButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1201,10 +1168,11 @@ function Focus() {
                 positionClasses: "absolute bottom-[20%] left-[15%] xl:left-[25%]",
                 expandedWidth: "w-20",
                 hoveredButton: hoveredButton,
-                setHoveredButton: setHoveredButton
+                setHoveredButton: setHoveredButton,
+                delay: 1.2
             }, void 0, false, {
                 fileName: "[project]/src/app/components/home/Focus.tsx",
-                lineNumber: 37,
+                lineNumber: 39,
                 columnNumber: 7
             }, this)
         ]
