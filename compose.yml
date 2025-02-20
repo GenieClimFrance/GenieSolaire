@@ -13,10 +13,12 @@ services:
       - traefik-public
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.app.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
-      - "traefik.http.services.app.loadbalancer.server.port=3000"
-      - "traefik.http.routers.app.entrypoints=web"
+      - "traefik.http.routers.${APP_NAME}.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
+      - "traefik.http.routers.${APP_NAME}.entrypoints=web,websecure"
+      - "traefik.http.services.${APP_NAME}-svc.loadbalancer.server.port=3000"
+      - "traefik.http.routers.${APP_NAME}.service=${APP_NAME}-svc"
       - "traefik.docker.network=traefik-public"
+      - "traefik.http.middlewares.${APP_NAME}-headers.headers.customrequestheaders.X-Forwarded-Proto=https"
     healthcheck:
       test:
         [
