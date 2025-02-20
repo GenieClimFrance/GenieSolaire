@@ -1,4 +1,4 @@
-name: Deploy to CapRover
+name: Deploy to Coolify
 on:
   push:
     branches: [main]
@@ -10,16 +10,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-
-      - name: Install CapRover CLI
-        run: |
-          npm install -g caprover@latest
-          caprover --version
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
@@ -34,14 +24,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest
 
-      - name: Deploy to CapRover
+      - name: Trigger Coolify Deployment
         run: |
-          # Installation de la dernière version de CapRover CLI
-          npm install -g caprover@latest
-
-          # Configuration du déploiement avec l'URL nip.io
-          caprover deploy \
-          --caproverUrl "https://captain.195.35.48.112.nip.io" \
-          --appToken "${{ secrets.CAPROVER_APP_TOKEN }}" \
-          --imageName "${{ secrets.DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:latest" \
-          --appName "${{ secrets.APP_NAME }}"
+          curl -X POST ${{ secrets.COOLIFY_WEBHOOK_URL }}
