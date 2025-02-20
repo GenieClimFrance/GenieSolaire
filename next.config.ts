@@ -12,7 +12,7 @@ const nextConfig = {
   },
   // Configuration des images
   images: {
-    domains: ["195.35.48.112"],
+    domains: ["195.35.48.112", "geniesolaire.195.35.48.112.nip.io"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },

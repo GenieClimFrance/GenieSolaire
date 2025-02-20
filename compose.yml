@@ -5,14 +5,17 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - PORT=3001
+      - PORT=80
       - SENDGRID_API_KEY=${SENDGRID_API_KEY}
       - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
       - SENDER_EMAIL=${SENDER_EMAIL}
     ports:
-      - "3001:3001"
+      - "80:80"
     networks:
       - nginx-proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${APP_NAME}.rule=Host(`geniesolaire.195.35.48.112.nip.io`)"
     # Vous pouvez ajouter des labels pour le reverse proxy, par exemple :
     # labels:
     #   - "VIRTUAL_HOST=www.mondomaine.com"
