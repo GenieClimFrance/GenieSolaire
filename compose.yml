@@ -9,16 +9,32 @@ services:
       - SENDGRID_API_KEY=${SENDGRID_API_KEY}
       - RECIPIENT_EMAIL=${RECIPIENT_EMAIL}
       - SENDER_EMAIL=${SENDER_EMAIL}
-    ports:
-      - "80:80"
+    expose:
+      - "80"
     networks:
       - nginx-proxy
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.${APP_NAME}.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
       - "traefik.http.services.${APP_NAME}.loadbalancer.server.port=80"
-      - "traefik.http.routers.${APP_NAME}.entrypoints=websecure"
+      - "traefik.http.routers.${APP_NAME}.entrypoints=web,websecure"
       - "traefik.http.routers.${APP_NAME}.tls=true"
+      - "traefik.http.middlewares.${APP_NAME}-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.${APP_NAME}-http.rule=Host(`wc0css4sk4o0848ogk8ss08g.195.35.48.112.sslip.io`)"
+      - "traefik.http.routers.${APP_NAME}-http.entrypoints=web"
+      - "traefik.http.routers.${APP_NAME}-http.middlewares=${APP_NAME}-redirect"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get('http://localhost:80/', res => res.statusCode === 200 ? process.exit(0) : process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
     # Vous pouvez ajouter des labels pour le reverse proxy, par exemple :
     # labels:
     #   - "VIRTUAL_HOST=www.mondomaine.com"
