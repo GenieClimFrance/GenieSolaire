@@ -14,6 +14,7 @@ import { slides } from "@/app/data/slides";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 export default function Slider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -52,7 +53,9 @@ export default function Slider() {
                   {text}
                 </p>
               ))}
-              <button className={styles.slideButton}>En savoir plus</button>
+              <Link href="#nos-solutions" className={styles.slideButton}>
+                En savoir plus
+              </Link>
             </div>
           </SwiperSlide>
         ))}
