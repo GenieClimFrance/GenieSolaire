@@ -13,15 +13,16 @@ export default function MentionsLegales() {
             responsables du présent site internet sont :
           </p>
           <p className="mb-4">
-            Le Site est administré par la société GÉNIE CLIM FRANCE, société par
-            actions simplifiée au capital de 30 000 €, immatriculée au Registre
-            du Commerce et des Sociétés de Bordeaux sous le numéro 922 736 533,
-            dont le siège social est situé 7 rue Victor Hugo 33185 LE HAILLAN.
+            Le Site est administré par la société GÉNIE SOLAIRE FRANCE, société
+            par actions simplifiée au capital de 30 000 €, immatriculée au
+            Registre du Commerce et des Sociétés de Bordeaux sous le numéro
+            82748287800044, dont le siège social est situé 20 avenue Jean Mermoz
+            33185 LE HAILLAN.
           </p>
           <ul className="mb-4 space-y-2">
-            <li>N° TVA Intracommunautaire : FR40922736533</li>
+            <li>N° TVA Intracommunautaire : FR08827482878</li>
             <li>Directeur de la Publication : Camille PERNOT</li>
-            <li>Contact : contact@genieclimfrance.fr</li>
+            <li>Contact : contact@geniesolairefrance.fr</li>
             <li>Tél : 09 72 12 14 01 (prix d&apos;un appel local)</li>
           </ul>
         </section>
@@ -30,11 +31,11 @@ export default function MentionsLegales() {
           <h2 className="text-2xl font-semibold mb-4">Droits d&apos;auteur</h2>
           <p className="mb-4">
             Les marques et logos figurant sur ce site sont des marques déposées
-            par GÉNIE CLIM FRANCE. Leur mention n&apos;accorde en aucune manière
-            une licence ou un droit d&apos;utilisation quelconque desdites
-            marques, qui ne peuvent donc être utilisées sans le consentement
-            préalable et écrit du propriétaire de la marque sous peine de
-            contrefaçon.
+            par GÉNIE SOLAIRE FRANCE. Leur mention n&apos;accorde en aucune
+            manière une licence ou un droit d&apos;utilisation quelconque
+            desdites marques, qui ne peuvent donc être utilisées sans le
+            consentement préalable et écrit du propriétaire de la marque sous
+            peine de contrefaçon.
           </p>
         </section>
 
@@ -68,13 +69,13 @@ export default function MentionsLegales() {
           </h2>
           <p className="mb-4">
             Les données personnelles que l&apos;utilisateur peut être amené à
-            fournir le sont sur une base volontaire. GÉNIE CLIM FRANCE collecte
-            et traite vos données [nom, prénom, adresse de messagerie
+            fournir le sont sur une base volontaire. GÉNIE SOLAIRE FRANCE
+            collecte et traite vos données [nom, prénom, adresse de messagerie
             électronique, téléphone] aux fins de mise en œuvre de l&apos;offre
             de service de travaux de rénovation énergétique, dans le cadre du
             dispositif des Certificats d&apos;Économie d&apos;Énergie, issu de
             la loi POPE de 2005, et toutes autres offres que peut proposer la
-            société GÉNIE CLIM FRANCE.
+            société GÉNIE SOLAIRE FRANCE.
           </p>
           <p className="mb-4">
             Nous conservons vos données dans notre base uniquement le temps
@@ -91,21 +92,21 @@ export default function MentionsLegales() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Responsabilité</h2>
           <p className="mb-4">
-            GÉNIE CLIM FRANCE met tout en œuvre pour présenter aux utilisateurs
-            des informations disponibles et vérifiées, mais ne saurait être
-            tenue pour responsable des erreurs ou omissions, d&apos;une absence
-            de disponibilité de ces informations. En conséquence,
-            l&apos;utilisateur reconnaît utiliser des informations sous sa
-            responsabilité exclusive. GÉNIE CLIM FRANCE est susceptible de
-            modifier à tout moment le contenu de son site.
+            GÉNIE SOLAIRE FRANCE met tout en œuvre pour présenter aux
+            utilisateurs des informations disponibles et vérifiées, mais ne
+            saurait être tenue pour responsable des erreurs ou omissions,
+            d&apos;une absence de disponibilité de ces informations. En
+            conséquence, l&apos;utilisateur reconnaît utiliser des informations
+            sous sa responsabilité exclusive. GÉNIE SOLAIRE FRANCE est
+            susceptible de modifier à tout moment le contenu de son site.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
           <p className="mb-4">
-            GÉNIE CLIM FRANCE procède, sur le Site, à l&apos;enregistrement de
-            données techniques, à savoir des cookies. Le cookie est un
+            GÉNIE SOLAIRE FRANCE procède, sur le Site, à l&apos;enregistrement
+            de données techniques, à savoir des cookies. Le cookie est un
             enregistrement d&apos;informations par le serveur dans un fichier
             texte situé sur votre ordinateur. Ces informations peuvent être
             relues et modifiées ultérieurement par ce même serveur.
