@@ -40,28 +40,38 @@ function Navbar() {
         {/* Navbar */}
         <div className="navbar w-full flex gap-4 p-4">
           <div className={`dropdown relative ${isOpen ? "active" : ""}`}>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center gap-2 rounded-lg px-3 py-1 hover:bg-gray-300 transition-colors"
-            >
-              <Image
-                src={logo}
-                alt="logo"
-                width={150}
-                className="lg:w-[200px]"
-              />
-              <FaChevronDown className="text-gray-400 text-xs" />
-            </button>
-            <div className="dropdown-content absolute left-0 top-full bg-white p-4 shadow-lg rounded-lg mt-10 z-50">
-              <a href="https://genieclimfrance.fr">
+            <div className="flex items-center gap-2">
+              <Link href="/">
                 <Image
-                  src={logoGCF}
-                  alt="logo GCF"
+                  src={logo}
+                  alt="logo"
                   width={150}
                   className="lg:w-[200px] hover:opacity-80 transition-opacity"
                 />
-              </a>
+              </Link>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2 hover:bg-gray-300 rounded-lg transition-colors"
+              >
+                <FaChevronDown className="text-gray-400 text-xs" />
+              </button>
             </div>
+            {isOpen && (
+              <div className="dropdown-content absolute left-0 top-full bg-white p-4 shadow-lg rounded-lg mt-10 z-50">
+                <a
+                  href="https://genieclimfrance.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={logoGCF}
+                    alt="logo GCF"
+                    width={150}
+                    className="lg:w-[200px] hover:opacity-80 transition-opacity"
+                  />
+                </a>
+              </div>
+            )}
           </div>
           <div className="flex-1"></div>
           <div className="flex-none lg:hidden">
