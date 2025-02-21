@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
-  experimental: {
-    // Supprimez également cette option si elle n'est pas supportée
-    // outputFileTracingRoot: "../",
-  },
-  // Optimisations de compilation
-  // swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
@@ -15,6 +9,20 @@ const nextConfig = {
     domains: ["195.35.48.112", "geniesolaire.195.35.48.112.nip.io"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/erp/:path*",
+        destination: "http://geniesolaire-france.fr/erp/:path*",
+        permanent: true,
+      },
+      {
+        source: "/clients/:path*",
+        destination: "http://geniesolaire-france.fr/clients/:path*",
+        permanent: true,
+      },
+    ];
   },
   // Configuration des headers de sécurité
   async headers() {
