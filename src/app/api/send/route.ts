@@ -1,17 +1,11 @@
 import { NextResponse } from "next/server";
-import sgMail from "@sendgrid/mail";
 
-const apiKey = process.env.SENDGRID_API_KEY;
+const apiKey = process.env.BREVO_API_KEY;
 if (!apiKey) {
-  console.warn("Clé API SendGrid manquante");
+  console.warn("Clé API Brevo manquante");
 }
 
-// Initialiser SendGrid seulement si la clé est présente
-if (apiKey) {
-  sgMail.setApiKey(apiKey);
-}
-
-interface SendGridErrorResponse {
+interface BrevoErrorResponse {
   message: string;
   code: number;
   response?: {
@@ -21,7 +15,7 @@ interface SendGridErrorResponse {
 
 export async function POST(request: Request) {
   if (!apiKey) {
-    console.error("Clé API SendGrid manquante");
+    console.error("Clé API Brevo manquante");
     return NextResponse.json(
       { message: "Configuration du serveur d'emails manquante" },
       { status: 500 }
@@ -46,15 +40,18 @@ export async function POST(request: Request) {
       );
     }
 
-    const msg = {
-      to: process.env.RECIPIENT_EMAIL || "contact@geniesolairefrance.fr",
-      from: {
-        email:
-          process.env.VERIFIED_SENDER_EMAIL || "contact@geniesolairefrance.fr",
-        name: "GENIE SOLAIRE FRANCE",
+    const emailData = {
+      sender: {
+        email: process.env.SENDER_EMAIL || "contact@geniesolairefrance.fr",
+        name: "GENIE ISOL FRANCE",
       },
+      to: [
+        {
+          email: process.env.RECIPIENT_EMAIL || "contact@geniesolairefrance.fr",
+        },
+      ],
       subject: `Nouveau message de ${nom} depuis le formulaire de contact`,
-      text: `
+      textContent: `
         Nouveau message de: ${nom}
         Email: ${email}
         Téléphone: ${telephone || "Non renseigné"}
@@ -62,7 +59,7 @@ export async function POST(request: Request) {
         Code Postal: ${codePostal || "Non renseigné"}
         Message: ${message}
       `,
-      html: `
+      htmlContent: `
         <h2>Nouveau message de contact</h2>
         <p><strong>Nom:</strong> ${nom}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -74,37 +71,40 @@ export async function POST(request: Request) {
 
     try {
       console.log("Tentative d'envoi avec configuration:", {
-        to: msg.to,
-        from: msg.from.email,
-        subject: msg.subject,
+        to: emailData.to[0].email,
+        from: emailData.sender.email,
+        subject: emailData.subject,
         apiKeyPresent: !!apiKey,
       });
 
-      await sgMail.send(msg);
-      return NextResponse.json({ message: "Email envoyé avec succès" });
-    } catch (sendError: unknown) {
-      console.error("Erreur SendGrid détaillée:", {
-        error: sendError,
-        response: (sendError as any).response?.body,
-        stack: (sendError as Error).stack,
+      const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "api-key": apiKey,
+        },
+        body: JSON.stringify(emailData),
       });
-      if (
-        sendError &&
-        typeof sendError === "object" &&
-        "message" in sendError &&
-        "code" in sendError
-      ) {
-        const typedError = sendError as SendGridErrorResponse;
-        return NextResponse.json(
-          {
-            message: "Erreur lors de l'envoi de l'email",
-            details: `SendGrid: ${typedError.message}`,
-          },
-          { status: typedError.code || 500 }
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(
+          `Erreur Brevo: ${errorData.message || response.statusText}`
         );
       }
+
+      return NextResponse.json({ message: "Email envoyé avec succès" });
+    } catch (sendError: unknown) {
+      console.error("Erreur Brevo détaillée:", {
+        error: sendError,
+        stack: (sendError as Error).stack,
+      });
+
       return NextResponse.json(
-        { message: "Erreur lors de l'envoi de l'email" },
+        {
+          message: "Erreur lors de l'envoi de l'email",
+          details: (sendError as Error).message,
+        },
         { status: 500 }
       );
     }
