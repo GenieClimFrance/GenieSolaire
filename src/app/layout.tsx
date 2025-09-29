@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 // EmOne variants
 const EmOneSemiBold = localFont({
@@ -66,6 +67,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
