@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/emonesemibold_8d3a8fd6.module.css"],"sourcesContent":["@font-face {\n    font-family: 'EmOneSemiBold';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22./fonts/EmOne-SemiBold.ttf%22,%22preload%22:true,%22has_size_adjust%22:true}') format('truetype');\n    font-display: swap;\n    font-weight: 600;font-style: normal;\n}\n@font-face {\n    font-family: 'EmOneSemiBold';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22./fonts/EmOne-SemiBoldItalic.ttf%22,%22preload%22:true,%22has_size_adjust%22:true}') format('truetype');\n    font-display: swap;\n    font-weight: 600;font-style: italic;\n}\n\n@font-face {\n    font-family: 'EmOneSemiBold Fallback';\n    src: local(\"Arial\");\n    ascent-override: 88.05%;\ndescent-override: 32.12%;\nline-gap-override: 19.41%;\nsize-adjust: 113.34%;\n\n}\n\n.className {\n    font-family: 'EmOneSemiBold', 'EmOneSemiBold Fallback';\n    \n}\n.variable {\n    --font-em-one: 'EmOneSemiBold', 'EmOneSemiBold Fallback';\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;;;AAMA;;;;;;;;AAOA;;;;;;;;;AAUA;;;;AAIA"}},
-    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
